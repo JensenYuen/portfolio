@@ -1,9 +1,9 @@
+import { Container } from '@mui/material'
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { Container } from '@mui/material'
-import { Navbar } from '../layout/index'
+import { Navbar } from '../layout'
 
-const HomePage = () => {
+const WorksPage = () => {
   const { t } = useTranslation()
 
   return (
@@ -12,7 +12,7 @@ const HomePage = () => {
       <Container maxWidth='sm'>
         <div>
           <p>
-            {t('helloworld')}
+            {t('workspage.title')}
           </p>
         </div>
       </Container>
@@ -20,4 +20,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default WorksPage

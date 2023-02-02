@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutPage, HomePage } from './pages/index'
+import { AboutPage, HomePage, WorksPage } from './pages/index'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 const App = () => {
@@ -15,6 +15,10 @@ const App = () => {
     {
       path: '/about',
       element: <AboutPage />
+    },
+    {
+      path: '/works',
+      element: <WorksPage />
     }
   ])
 

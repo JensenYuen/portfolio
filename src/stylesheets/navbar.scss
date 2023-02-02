@@ -1,4 +1,22 @@
 .navbar {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+
+  li {
+    list-style-type: none;
+  }
+  .home {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none !important;
+  }
+  a {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 }
