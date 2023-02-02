@@ -1,16 +1,16 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-const HomePage = () => {
+const AboutPage = () => {
   const { t } = useTranslation()
 
   return (
     <div>
       <p>
-        {t('helloworld')}
+        {t('aboutpage.title')}
       </p>
     </div>
   )
 }
 
-export default HomePage
+export default AboutPage

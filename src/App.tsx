@@ -1,8 +1,8 @@
 import React from 'react'
-import { HomePage } from './pages/index'
+import { AboutPage, HomePage } from './pages/index'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-const App: React.FC = () => {
+const App = () => {
   const router = createBrowserRouter([
     {
       path: '/',
@@ -11,6 +11,10 @@ const App: React.FC = () => {
     {
       path: '/portfolio',
       element: <HomePage />
+    },
+    {
+      path: '/about',
+      element: <AboutPage />
     }
   ])
 

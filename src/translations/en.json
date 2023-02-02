@@ -1,0 +1,46 @@
+{
+  "helloworld": "Hello world",
+  "homepage": {
+    "name": "I'm Jensen Yuen",
+    "aboutme": "Borned and raised in Singapore. Career-changer. Currently, pursing a career as a Full-stack Developer."
+  },
+  "portfoilo": {
+    "header": "Portfoilo",
+    "subtext": "This section contains work that I have contributed to developing.",
+    "offgrid": {
+      "title": "Offgrid",
+      "description": "Final project",
+      "info": "Offgrid was developed to help novice hikers prepare for their hiking trip. We identified the lack of concise information for hikers and the lack of communication between hikers and their family and/or friends."
+  },
+  "scubadoo": {
+    "title": "Scubadoo",
+    "description": "Marketplace clone",
+    "info": "Scubadoo is a marketplace clone (of Padi) developed within 3 days, this app was created to help divers locate dive centers and dive listings around the world."
+  },
+  "gathersg": {
+    "title": "GatherSG",
+    "description": "Case managment",
+    "info": "Maintained and developed features. Engaged with stakeholders and users to provide support for their issues. Developed REST API for system integrations. "
+    }
+  },
+  "aboutpage": {
+    "title": "About this webpage",
+    "subtext": "This page contains the tech stack and tools used to create this page.",
+    "react": {
+      "title": "React",
+      "description": "React is used to create this SPA"
+    },
+    "typescript": {
+      "title": "TypeScript",
+      "description": "TS is mainly used for this app"
+    },
+    "bootstrap": {
+      "title": "BootStrap",
+      "description": "Twitter Bootstrap UI boilerplate was used for the frontend"
+    },
+    "github": {
+      "title": "GitHub",
+      "description": "GitHub Pages is used to host this webpage"
+    }
+  }
+}
