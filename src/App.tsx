@@ -7,7 +7,12 @@ const App = () => {
   {
     path: "/",
     element: <HomePage />
-  }]);
+  },
+  {
+    path: "/portfolio",
+    element: <HomePage />
+  }
+]);
 
   return (
     <RouterProvider router={router} />
