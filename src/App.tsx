@@ -7,12 +7,7 @@ const App = () => {
   {
     path: "/",
     element: <HomePage />
-  },
-  {
-    path: "/popu-graph",
-    element: <HomePage />
-  }
-]);
+  }]);
 
   return (
     <RouterProvider router={router} />
