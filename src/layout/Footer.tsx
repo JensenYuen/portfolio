@@ -1,12 +1,18 @@
+import { Container } from '@mui/material'
 import React from 'react'
+import '../stylesheets/footer.scss'
 
 const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <div className="footer">
-      {`© ${year} Jensen Yuen. All Rights Reserved.`}
-    </div>
+    <footer>
+      <Container maxWidth='sm'>
+        <div className="footer">
+          {`© ${year} Jensen Yuen. All Rights Reserved.`}
+        </div>
+      </Container>
+    </footer>
   )
 }
 
