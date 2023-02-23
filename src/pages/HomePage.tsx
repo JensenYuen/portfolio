@@ -7,7 +7,6 @@ import '../stylesheets/homepage.scss'
 
 const HomePage = () => {
   const { t } = useTranslation()
-  console.log(t)
 
   return (
     <main className='pb-5'>
