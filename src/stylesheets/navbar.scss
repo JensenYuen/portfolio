@@ -21,3 +21,20 @@
     text-underline-offset: 3px;
   }
 }
+
+.MuiBox-root {
+  li {
+    list-style-type: none;
+  }
+
+  a {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

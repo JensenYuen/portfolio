@@ -91,9 +91,15 @@ const NavBar = () => {
       <List>
         {links.map((link: linkInfo, index) => {
           if (index === 0) {
-            return <></>
+            return (
+              <ListItem key={link.text} disablePadding>
+                <ListItemButton>
+                  <Link to='/'>Home</Link>
+                </ListItemButton>
+              </ListItem>
+            )
           }
-          if (index !== 0) {
+          if (index !== 3) {
             return (
               <ListItem key={link.text} disablePadding>
                 <ListItemButton>
