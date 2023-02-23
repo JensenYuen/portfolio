@@ -1,6 +1,7 @@
 import { Box, Button, Container, Drawer, List, ListItem, ListItemButton } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import MenuIcon from '@mui/icons-material/Menu'
 import '../stylesheets/navbar.scss'
 import '../stylesheets/global.scss'
 
@@ -133,7 +134,8 @@ const NavBar = () => {
           }
           {isMobile &&
             <div className="sidebar">
-              <Button onClick={toggleDrawer(true)}>right</Button>
+              <Button onClick={toggleDrawer(true)}
+                startIcon={<MenuIcon />} style={{ color: '#7e27b3' }}/>
               <Drawer
                 anchor={'right'}
                 open={isOpen}
