@@ -7,6 +7,15 @@ $spacing: (
   "5": 1.25rem
 );
 
+.d-flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+
 @each $key, $val in $spacing {
   // margin
  .mr-#{$key} {

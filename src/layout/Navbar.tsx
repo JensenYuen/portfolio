@@ -1,5 +1,5 @@
-import { Container } from '@mui/material'
-import React from 'react'
+import { Box, Button, Container, Drawer, List, ListItem, ListItemButton } from '@mui/material'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import '../stylesheets/navbar.scss'
 import '../stylesheets/global.scss'
@@ -10,25 +10,56 @@ interface linkInfo {
 }
 
 const NavBar = () => {
+  const [isOpen, setisOpen] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
+  const [winSize, setWinSize] = useState(window.innerWidth)
+
+  useEffect(() => {
+    const handleResize = () => {
+      const windowSize = window.innerWidth
+      if (windowSize < 720) {
+        setWinSize(windowSize)
+        setIsMobile(true)
+      } else {
+        setWinSize(windowSize)
+        setIsMobile(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    handleResize()
+  }, [winSize])
+
   const links = [
-    { text: 'Jensen Yuen', link: 'portfolio' },
+    { text: 'Jensen Yuen', link: '' },
     { text: 'Works', link: 'works' },
     { text: 'About', link: 'about' },
     { text: 'Source', link: 'https://github.com/JensenYuen/portfolio' }
   ]
 
+  const renderHome = () => (
+    <Link
+      className='pr-2 home'
+      to='/'>
+        {links[0].text}
+      </Link>
+  )
+
   const renderLinks = () => {
     const link = links.map((link: linkInfo, index) => {
+      if (index === 0) {
+        return <></>
+      }
+
       return (
         <li key={link.link}>
           {index !== 3
             ? (<Link
-                className={`pr-2 ${index === 0 ? 'home' : ''}`}
+                className='pr-2'
                 to={`/${link.link}`}>
                   {link.text}
             </Link>)
             : (
-                <a href={link.link} target="_blank" rel="noreferrer">{link.text}</a>
+                <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
               )
           }
         </li>
@@ -38,11 +69,74 @@ const NavBar = () => {
     return link
   }
 
+  const toggleDrawer =
+    (open: boolean) =>
+      (event: React.KeyboardEvent | React.MouseEvent) => {
+        if ((event.type === 'keydown') &&
+        ((event as React.KeyboardEvent).key === 'Tab' ||
+          (event as React.KeyboardEvent).key === 'Escape')
+        ) {
+          return
+        }
+
+        setisOpen(open)
+      }
+
+  const list = () => (
+    <Box
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      onKeyDown={toggleDrawer(false)}
+    >
+      <List>
+        {links.map((link: linkInfo, index) => {
+          if (index === 0) {
+            return <></>
+          }
+          if (index !== 0) {
+            return (
+              <ListItem key={link.text} disablePadding>
+                <ListItemButton>
+                  <Link to={`/${link.link}`}>{link.text}</Link>
+                </ListItemButton>
+              </ListItem>
+            )
+          } else {
+            return (
+              <ListItem key={link.text} disablePadding>
+                <ListItemButton>
+                  <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
+                </ListItemButton>
+              </ListItem>
+            )
+          }
+        })}
+      </List>
+    </Box>
+  )
+
   return (
     <nav>
       <Container maxWidth='sm'>
-        <div className="navbar">
-          {renderLinks()}
+        <div className={`d-flex ${isMobile ? 'jc-sb' : ''}`}>
+          {renderHome()}
+          {!isMobile &&
+            <div className="navbar">
+              {renderLinks()}
+            </div>
+          }
+          {isMobile &&
+            <div className="sidebar">
+              <Button onClick={toggleDrawer(true)}>right</Button>
+              <Drawer
+                anchor={'right'}
+                open={isOpen}
+                onClose={toggleDrawer(false)}
+              >
+                {list()}
+              </Drawer>
+            </div>
+          }
         </div>
       </Container>
     </nav>

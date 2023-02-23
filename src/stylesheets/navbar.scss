@@ -1,14 +1,15 @@
+.home {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
 .navbar {
   display: flex;
   align-items: center;
 
   li {
     list-style-type: none;
-  }
-  .home {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none !important;
   }
   a {
     cursor: pointer;
