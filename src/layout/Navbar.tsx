@@ -124,7 +124,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <Container maxWidth='sm' className='pt-2'>
+      <Container maxWidth='sm' className='pt-2 mb-5'>
         <div className={`d-flex ${isMobile ? 'jc-sb' : ''}`}>
           {renderHome()}
           {!isMobile &&

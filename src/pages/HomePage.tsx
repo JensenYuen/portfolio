@@ -14,7 +14,7 @@ const HomePage = () => {
       <Navbar />
       <Container maxWidth='sm'>
         <div className="d-flex flex-column align-center text-center mb-5">
-          <img src={profile} alt='profile picture' className='profile-image'/>
+          <img src={profile} alt='profile picture' className='profile-image mb-2'/>
           <span>
             Hello! My name is Jensen. I am a fullstack developer.
           </span>
