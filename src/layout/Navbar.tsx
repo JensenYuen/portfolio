@@ -2,6 +2,7 @@ import { Box, Button, Container, Drawer, List, ListItem, ListItemButton } from '
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
+import GitHubIcon from '@mui/icons-material/GitHub'
 import '../stylesheets/navbar.scss'
 import '../stylesheets/global.scss'
 
@@ -30,7 +31,7 @@ const NavBar = () => {
     handleResize()
   }, [winSize])
 
-  const links = [
+  const links: linkInfo[] = [
     { text: 'Jensen Yuen', link: '' },
     { text: 'Works', link: 'works' },
     { text: 'About', link: 'about' },
@@ -60,7 +61,10 @@ const NavBar = () => {
                   {link.text}
             </Link>)
             : (
-                <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
+                <div className='d-flex'>
+                  <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
+                  <GitHubIcon fontSize='small' className='ml-1' />
+                </div>
               )
           }
         </li>
@@ -113,6 +117,7 @@ const NavBar = () => {
               <ListItem key={link.text} disablePadding>
                 <ListItemButton>
                   <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
+                  <GitHubIcon fontSize='small' className='ml-1' />
                 </ListItemButton>
               </ListItem>
             )
@@ -124,7 +129,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <Container maxWidth='sm' className='pt-2 mb-5'>
+      <Container maxWidth='sm' className='pt-2 pb-5'>
         <div className={`d-flex ${isMobile ? 'jc-sb' : ''}`}>
           {renderHome()}
           {!isMobile &&

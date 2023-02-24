@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer>
       <Container maxWidth='sm'>
-        <div className="footer">
+        <div className="footer pt-5">
           {`© ${year} Jensen Yuen. All Rights Reserved.`}
         </div>
       </Container>
