@@ -63,7 +63,7 @@ const NavBar = () => {
             : (
                 <div className='d-flex'>
                   <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
-                  <GitHubIcon fontSize='small' className='ml-1' />
+                  <GitHubIcon fontSize='small' className='ml-1 font-black' />
                 </div>
               )
           }
@@ -117,7 +117,7 @@ const NavBar = () => {
               <ListItem key={link.text} disablePadding>
                 <ListItemButton>
                   <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
-                  <GitHubIcon fontSize='small' className='ml-1' />
+                  <GitHubIcon fontSize='small' className='ml-1 font-black' />
                 </ListItemButton>
               </ListItem>
             )
