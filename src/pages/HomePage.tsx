@@ -2,7 +2,7 @@ import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Container } from '@mui/material'
 import { Footer, Navbar } from '../layout/index'
-import profile from '../assets/profile.png'
+import { profile } from '../assets/index'
 import '../stylesheets/homepage.scss'
 
 const HomePage = () => {
@@ -23,7 +23,7 @@ const HomePage = () => {
           </span>
         </div>
         <div className='mb-5'>
-          <div className='bio mb-1 '>Bio</div>
+          <div className='bio mb-1'>Bio</div>
           <div>
             <span className='mr-2'>1995</span>
             Born in Singapore
