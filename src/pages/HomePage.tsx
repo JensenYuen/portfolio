@@ -12,7 +12,7 @@ const HomePage = () => {
     <main className='pb-5'>
       <Navbar />
       <Container maxWidth='sm'>
-        <div className="d-flex flex-column align-center text-center mb-5">
+        <div className="d-flex flex-column align-center text-center">
           <img src={profile} alt='profile picture' className='profile-image mb-3'/>
           <div className='d-flex align-center'>
             <h2 className='mt-0 mb-2 mr-1'>Jensen Yuen</h2>
@@ -23,7 +23,7 @@ const HomePage = () => {
           </span>
         </div>
         <div className='mb-5'>
-          <div className='header'>Bio</div>
+          <div className='bio mb-1 '>Bio</div>
           <div>
             <span className='mr-2'>1995</span>
             Born in Singapore
