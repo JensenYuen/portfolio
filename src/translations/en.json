@@ -1,26 +1,49 @@
 {
-  "helloworld": "Hello world",
   "homepage": {
-    "name": "I'm Jensen Yuen",
-    "aboutme": "Borned and raised in Singapore. Career-changer. Currently, pursing a career as a Full-stack Developer."
+    "name": "Jensen Yuen",
+    "title": "(Software Engineer)",
+    "quote": "Hello, I aspire to be a fullstack web developer!",
+    "bio": "Born in Singapore",
+    "ntu": "Graduated from Nanyang Technological University, Bachelor of Engineering Specialization: Electronic Engineering (Microelectronics & Photonics)",
+    "lewagon": "Completed Web Development Course from LeWagon"
   },
-  "portfoilo": {
-    "header": "Portfoilo",
-    "subtext": "This section contains work that I have contributed to developing.",
+  "work": {
+    "subtext": "Personal/official works that I had contributed in developing.",
+    "subtext2": "Works are arranged from newest to oldest work.",
+    "popugraph": {
+      "title": "Population graph",
+      "subtext": "React SPA",
+      "description": "Resas API was used to obtain population data, while highchartsJS was used to plot and display the data.",
+      "source": "https://github.com/JensenYuen/population-graph",
+      "link": "https://jensenyuen.github.io/popu-graph/"
+    },
+    "prevport": {
+      "title": "Portfolio (previous)",
+      "subtext": "React SPA",
+      "description": "My attempt at creating my personal page using React and Bootstrap UI",
+      "source": "https://github.com/JensenYuen/my-page",
+      "link": "https://jensenyuen.github.io/my-page/"
+    },
+    "gathersg": {
+      "title": "GatherSG",
+      "subtext": "Government Service",
+      "description": "Maintained and developed features. Engaged with stakeholders and users to provide support for their issues. Developed REST API for system intergraions.",
+      "source": "",
+      "link": "https://gather.gov.sg/"
+    },
     "offgrid": {
       "title": "Offgrid",
-      "description": "Final project",
-      "info": "Offgrid was developed to help novice hikers prepare for their hiking trip. We identified the lack of concise information for hikers and the lack of communication between hikers and their family and/or friends."
-  },
-  "scubadoo": {
-    "title": "Scubadoo",
-    "description": "Marketplace clone",
-    "info": "Scubadoo is a marketplace clone (of Padi) developed within 3 days, this app was created to help divers locate dive centers and dive listings around the world."
-  },
-  "gathersg": {
-    "title": "GatherSG",
-    "description": "Case managment",
-    "info": "Maintained and developed features. Engaged with stakeholders and users to provide support for their issues. Developed REST API for system integrations. "
+      "subtext": "Product Development",
+      "description": "Offgrid was developed to help novice hikers prepare for their hiking trip. We identified the lack of concise information for hikers and the lack of communication between hikers and their families/friends.",
+      "source": "https://github.com/eztree/offgrid",
+      "link": ""
+    },
+    "scubadoo": {
+      "title": "Scubadoo",
+      "subtext": "Product Development",
+      "description": "Scubadoo was developed to help divers locate dive centers and dive listings around the world. This is a marketplace clone (of Padi) developed within 3 days.",
+      "source": "https://github.com/suansen/scubadoo",
+      "link": ""
     }
   },
   "aboutpage": {

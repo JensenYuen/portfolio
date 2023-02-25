@@ -16,8 +16,8 @@ interface worksInfo {
   subText: string
   description: string
   key: string
-  source?: string
-  link?: string
+  source: string
+  link: string
 }
 
 const WorksPage = () => {
@@ -35,43 +35,46 @@ const WorksPage = () => {
     offgrid,
     scubadoo
   }
-
+  // <a href='https://opendata.resas-portal.go.jp/' target='_blank' rel='noreferrer'>resas API</a>
   const works: worksInfo[] = [
     {
-      title: 'Population graph',
-      subText: 'React SPA',
-      description: 'Resas API was used to obtain population data, while highcharts was used to plot and display the data.',
-      source: 'https://github.com/JensenYuen/population-graph',
-      link: 'https://jensenyuen.github.io/popu-graph/',
+      title: t('work.popugraph.title'),
+      subText: t('work.popugraph.subtext'),
+      description: t('work.popugraph.description'),
+      source: t('work.popugraph.source'),
+      link: t('work.popugraph.link'),
       key: 'popuGraph'
     },
     {
-      title: 'Portfolio (previous)',
-      subText: 'React SPA',
-      description: 'previous_description',
-      source: 'https://github.com/JensenYuen/my-page',
-      link: 'https://jensenyuen.github.io/my-page/',
+      title: t('work.prevport.title'),
+      subText: t('work.prevport.subtext'),
+      description: t('work.prevport.description'),
+      source: t('work.prevport.source'),
+      link: t('work.prevport.link'),
       key: 'prevPort'
     },
     {
-      title: 'GatherSg',
-      subText: 'Government service',
-      description: 'gathersg_description',
-      link: 'https://gather.gov.sg/',
+      title: t('work.gathersg.title'),
+      subText: t('work.gathersg.subtext'),
+      description: t('work.gathersg.description'),
+      source: t('work.gathersg.source'),
+      link: t('work.gathersg.link'),
       key: 'gathersg'
     },
     {
-      title: 'OffGrid',
-      subText: 'Product development',
-      description: 'offgrid_description',
-      source: 'https://github.com/eztree/offgrid',
+      title: t('work.offgrid.title'),
+      subText: t('work.offgrid.subtext'),
+      description: t('work.offgrid.description'),
+      source: t('work.offgrid.source'),
+      link: t('work.offgrid.link'),
       key: 'offgrid'
     },
     {
-      title: 'Scubadoo',
-      subText: 'Product development',
-      description: 'scubadoo_description',
-      source: 'https://github.com/suansen/scubadoo',
+      title: t('work.scubadoo.title'),
+      subText: t('work.scubadoo.subtext'),
+      description: t('work.scubadoo.description'),
+      source: t('work.scubadoo.source'),
+      link: t('work.scubadoo.link'),
       key: 'scubadoo'
     }
   ]
@@ -95,7 +98,7 @@ const WorksPage = () => {
             <Typography sx={{ color: 'text.secondary' }}>{work.subText}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <img src={images[work.key]} className="work-image mb-2" />
+            <img src={images[work.key]} className="work-image mb-2" loading='lazy'/>
             <Typography>
               {work.description}
             </Typography>
@@ -108,12 +111,12 @@ const WorksPage = () => {
   }
 
   return (
-    <main>
+    <main className='pb-5'>
       <Navbar />
       <Container maxWidth='sm'>
         <div className='mb-5'>
           <div className='work-title mt-0 mb-1'>Works</div>
-          <span>Personal/offical works that I had contributed in developing.</span><br/>
+          <span>Personal/official works that I had contributed in developing.</span><br/>
           <span>Works are arranged from newest to oldest work.</span>
         </div>
         <div>

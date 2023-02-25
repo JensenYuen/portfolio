@@ -15,27 +15,26 @@ const HomePage = () => {
         <div className="d-flex flex-column align-center text-center">
           <img src={profile} alt='profile picture' className='profile-image mb-3'/>
           <div className='d-flex align-center'>
-            <h2 className='mt-0 mb-2 mr-1'>Jensen Yuen</h2>
-            (Software Engineer)
+            <h2 className='mt-0 mb-2 mr-1'>{t('homepage.name')}</h2>
+            {t('homepage.title')}
           </div>
           <span className='quote'>
-            Hello, I aspire to be a fullstack web developer!
+            {t('homepage.quote')}
           </span>
         </div>
         <div className='mb-5'>
           <div className='bio mb-1'>Bio</div>
           <div>
             <span className='mr-2'>1995</span>
-            Born in Singapore
+            {t('homepage.bio')}
           </div>
           <div>
             <span className='mr-2'>2021</span>
-            Graduated from Nanyang Technological University, Bachelor of Engineering
-            Specialization: Electronic Engineering (Microelectronics & Photonics)
+            {t('homepage.ntu')}
           </div>
           <div>
             <span className='mr-2'>2021</span>
-            Completed Web Development Course from LeWagon
+            {t('homepage.lewagon')}
           </div>
         </div>
       </Container>
