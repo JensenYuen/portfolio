@@ -1,0 +1,30 @@
+.about-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-decoration: underline 2px;
+  text-underline-offset: 3px;
+}
+
+// mobile layout
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+
+  .about-image {
+    width: 100%;
+    height: 200px;
+    border: 1px solid rgba(154, 153, 153, 0.8);
+    box-shadow: 1px 1px 8px 0px #3e3e3e;
+    border-radius: 1rem;
+  }
+}
+
+//tablet and larger layout
+@media screen and (min-device-width: 750px) {
+  .grid-layout {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+}
