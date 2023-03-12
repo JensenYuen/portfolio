@@ -60,3 +60,18 @@ $spacing: (
    padding-bottom: $val;
  }
 }
+
+// mobile layout
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+//tablet and larger layout
+@media screen and (min-device-width: 750px) {
+  .grid-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+}
