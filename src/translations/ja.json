@@ -5,11 +5,11 @@
     "quote": "フルスタックを目指したいです!",
     "bio": "シンガポールに生まれた",
     "ntu": "南洋理工大学（シンガポール）電子電気工学部　卒業",
-    "lewagon": "ウェブ開発コース　卒業"
+    "lewagon": "LeWagon ウェブ開発コース　卒業"
   },
   "work": {
-    "subtext": "Personal/official works that I had contributed in developing.",
-    "subtext2": "Works are arranged from newest to oldest work.",
+    "subtext": "個人・公式のものです。以下のは私に携わったものです。",
+    "subtext2": "作品は最新なものから古いものまで並んでいます。",
     "popugraph": {
       "title": "人口グラフ",
       "subtext": "React SPA",
@@ -20,7 +20,7 @@
     "prevport": {
       "title": "ポートフォリオ(旧)",
       "subtext": "React SPA",
-      "description": "My attempt at creating my personal page using React and Bootstrap UI",
+      "description": "ReactとBootStrapを使用して、ポートフォリオをつくりました",
       "source": "https://github.com/JensenYuen/my-page",
       "link": "https://jensenyuen.github.io/my-page/"
     },
@@ -46,24 +46,17 @@
       "link": ""
     }
   },
-  "aboutpage": {
-    "title": "サイトについて",
-    "subtext": "このページは開発環境やトールを表示しています。",
+  "about": {
+    "subtext": "このページを作成しました技術スタック",
     "react": {
       "title": "React",
-      "description": "Reactを使用して、SPA構築しました"
+      "altText": "React image",
+      "description": "Reactで簡単にSPAを作成できるライブラリです"
     },
-    "typescript": {
-      "title": "TypeScript",
-      "description": "主にTypeScriptを使用して、開発しました"
-    },
-    "bootstrap": {
-      "title": "BootStrap",
-      "description": "Bootstrapフロントエンドフレームワークを使用しました"
-    },
-    "github": {
-      "title": "GitHub",
-      "description": "GitHub Pagesでリリースしました"
+    "materialui": {
+      "title": "MaterialUI",
+      "altText": "MaterialUI image",
+      "description": "Google の Material Designをベースに開発された、UIコンポーネントライブラリです"
     }
   }
 }

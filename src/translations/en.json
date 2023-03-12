@@ -46,24 +46,17 @@
       "link": ""
     }
   },
-  "aboutpage": {
-    "title": "About this webpage",
-    "subtext": "This page contains the tech stack and tools used to create this page.",
+  "about": {
+    "subtext": "A list of tech that I used to create this page.",
     "react": {
       "title": "React",
-      "description": "React is used to create this SPA"
+      "altText": "React image",
+      "description": "React used for creating Single-page Applications (SPA)"
     },
-    "typescript": {
-      "title": "TypeScript",
-      "description": "TS is mainly used for this app"
-    },
-    "bootstrap": {
-      "title": "BootStrap",
-      "description": "Twitter Bootstrap UI boilerplate was used for the frontend"
-    },
-    "github": {
-      "title": "GitHub",
-      "description": "GitHub Pages is used to host this webpage"
+    "materialui": {
+      "title": "MaterialUI",
+      "altText": "MaterialUI image",
+      "description": "A component library used for creating websites"
     }
   }
 }
