@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutPage, HomePage, PopuPage, WorksPage, GatherPage, Root } from './pages/index'
+import { AboutPage, HomePage, WorksPage, DetailedWorkPage, Root } from './pages/index'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 const App = () => {
@@ -21,12 +21,24 @@ const App = () => {
           element: <WorksPage />,
           children: [
             {
-              path: 'graph',
-              element: <PopuPage />
+              path: 'popugraph',
+              element: <DetailedWorkPage />
             },
             {
-              path: 'gather',
-              element: <GatherPage />
+              path: 'prevport',
+              element: <DetailedWorkPage />
+            },
+            {
+              path: 'gathersg',
+              element: <DetailedWorkPage />
+            },
+            {
+              path: 'offgrid',
+              element: <DetailedWorkPage />
+            },
+            {
+              path: 'scubadoo',
+              element: <DetailedWorkPage />
             }
           ]
         }
