@@ -1,0 +1,66 @@
+$spacing: (
+  "0": 0,
+  "1": 0.25rem,
+  "2": 0.5rem,
+  "3": 0.75rem,
+  "4": 1rem,
+  "5": 1.25rem
+);
+
+a:visited {
+  color: #7e27b3
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-black {
+  color: #2d2d2d;
+}
+
+@each $key, $val in $spacing {
+  // margin
+ .mr-#{$key} {
+    margin-right: $val;
+ }
+ .ml-#{$key} {
+    margin-left: $val;
+ }
+ .mt-#{$key} {
+    margin-top: $val;
+ }
+ .mb-#{$key} {
+    margin-bottom: $val;
+ }
+
+  // padding
+ .pr-#{$key} {
+   padding-right: $val;
+ }
+ .pl-#{$key} {
+   padding-left: $val;
+ }
+ .pt-#{$key} {
+   padding-top: $val;
+ }
+ .pb-#{$key} {
+   padding-bottom: $val;
+ }
+}

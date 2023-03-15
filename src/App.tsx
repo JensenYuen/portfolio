@@ -1,16 +1,48 @@
 import React from 'react'
-import { HomePage } from './pages/index'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { AboutPage, HomePage, WorksPage, DetailedWorkPage, Root } from './pages/index'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
-const App: React.FC = () => {
-  const router = createBrowserRouter([
+const App = () => {
+  const router = createHashRouter([
     {
       path: '/',
-      element: <HomePage />
-    },
-    {
-      path: '/portfolio',
-      element: <HomePage />
+      element: <Root />,
+      children: [
+        {
+          path: '/',
+          element: <HomePage />
+        },
+        {
+          path: 'about',
+          element: <AboutPage />
+        },
+        {
+          path: '/works',
+          element: <WorksPage />,
+          children: [
+            {
+              path: 'popugraph',
+              element: <DetailedWorkPage />
+            },
+            {
+              path: 'prevport',
+              element: <DetailedWorkPage />
+            },
+            {
+              path: 'gathersg',
+              element: <DetailedWorkPage />
+            },
+            {
+              path: 'offgrid',
+              element: <DetailedWorkPage />
+            },
+            {
+              path: 'scubadoo',
+              element: <DetailedWorkPage />
+            }
+          ]
+        }
+      ]
     }
   ])
 

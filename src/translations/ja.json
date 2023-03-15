@@ -1,0 +1,62 @@
+{
+  "homepage": {
+    "name": "ユエン・ホー・チン",
+    "title": "(ソフトウェアエンジニア)",
+    "quote": "フルスタックを目指したいです!",
+    "bio": "シンガポールに生まれた",
+    "ntu": "南洋理工大学（シンガポール）電子電気工学部　卒業",
+    "lewagon": "LeWagon ウェブ開発コース　卒業"
+  },
+  "work": {
+    "subtext": "以下は私に携わった個人・公式のものです。",
+    "subtext2": "作品は最新なものから古いものまで並んでいます。",
+    "popugraph": {
+      "title": "人口グラフ",
+      "subtext": "React SPA",
+      "description": "Resas無料APIを使用して、日本府県人口データはhighchartsJSで現します。",
+      "source": "https://github.com/JensenYuen/population-graph",
+      "link": "https://jensenyuen.github.io/popu-graph/"
+    },
+    "prevport": {
+      "title": "ポートフォリオ(旧)",
+      "subtext": "React SPA",
+      "description": "ReactとBootStrapを使用して、ポートフォリオをつくりました",
+      "source": "https://github.com/JensenYuen/my-page",
+      "link": "https://jensenyuen.github.io/my-page/"
+    },
+    "gathersg": {
+      "title": "GatherSG",
+      "subtext": "官公庁サイト",
+      "description": "保守、新しい機能の開発を担当しました。DevOpsとしてアプリ関係者やユーザーと関わり、問題解決しました。REST APIを開発して、3つのシステムを統合しました。",
+      "source": "",
+      "link": "https://gather.gov.sg/"
+    },
+    "offgrid": {
+      "title": "OffGrid",
+      "subtext": "プロダクト開発",
+      "description": "Offgridは、登山の初心者向けに作成しました。天気予報、必要なもの、ルート、などの基本情報を綺麗に準備して、緊急連絡先も含めて、緊急な時に情報は家族や救急隊に送ります。",
+      "source": "https://github.com/eztree/offgrid",
+      "link": ""
+    },
+    "scubadoo": {
+      "title": "Scubadoo",
+      "subtext": "プロダクト開発",
+      "description": "Scubadooは、ダイバー向けに作成しました。世界中のダイバーセンターやダイブ場所を簡単に探せるのサイトです。3日間に作成した(Padiの)ECクローンです。",
+      "source": "https://github.com/suansen/scubadoo",
+      "link": ""
+    }
+  },
+  "about": {
+    "subtext": "このページを作成しました技術スタック",
+    "react": {
+      "title": "React",
+      "altText": "React image",
+      "description": "Reactで簡単にSPAを作成できるライブラリです"
+    },
+    "materialui": {
+      "title": "MaterialUI",
+      "altText": "MaterialUI image",
+      "description": "Google の Material Designをベースに開発された、UIコンポーネントライブラリです"
+    }
+  }
+}
