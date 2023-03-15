@@ -51,7 +51,7 @@ const AboutPage = () => {
         <div className='about-title mt-0 mb-1'>Tech</div>
         <span>{t('about.subtext')}</span><br/>
       </div>
-      <div className='grid-layout'>
+      <div className='about-grid'>
         {renderCards()}
       </div>
     </Container>

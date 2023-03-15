@@ -38,10 +38,6 @@ const NavBar = () => {
     { text: 'Source', link: 'https://github.com/JensenYuen/portfolio' }
   ]
 
-  const renderHome = () => (
-    <Link className='pr-2 home' to='/'>{links[0].text}</Link>
-  )
-
   const renderLinks = () => {
     const link = links.map((link: linkInfo, index) => {
       if (index === 0) {
@@ -89,7 +85,7 @@ const NavBar = () => {
         {links.map((link: linkInfo, index) => {
           if (index === 0) {
             return (
-              <ListItem key={link.text} disablePadding>
+              <ListItem key={`${link.text}-mobile`} disablePadding>
                 <ListItemButton>
                   <Link to='/'>Home</Link>
                 </ListItemButton>
@@ -98,7 +94,7 @@ const NavBar = () => {
           }
           if (index !== 3) {
             return (
-              <ListItem key={link.text} disablePadding>
+              <ListItem key={`${link.text}-mobile`} disablePadding>
                 <ListItemButton>
                   <Link to={`/${link.link}`} state={{ workSelected: false }}>{link.text}</Link>
                 </ListItemButton>
@@ -106,7 +102,7 @@ const NavBar = () => {
             )
           } else {
             return (
-              <ListItem key={link.text} disablePadding>
+              <ListItem key={`${link.text}-mobile`} disablePadding>
                 <ListItemButton>
                   <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
                   <GitHubIcon fontSize='small' className='ml-1 font-black' />
@@ -123,7 +119,7 @@ const NavBar = () => {
     <nav>
       <Container maxWidth='md' className='pt-2 pb-5'>
         <div className={`d-flex ${isMobile ? 'jc-sb' : ''}`}>
-          {renderHome()}
+          <Link key='home-mobile' className='pr-2 home' to='/'>{links[0].text}</Link>
           {!isMobile &&
             <div className="navbar">
               {renderLinks()}
