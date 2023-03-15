@@ -18,3 +18,32 @@
   background-color: rgba(232, 232, 232, 0.8);
   border-radius: 0.5rem;
 }
+
+// mobile layout
+.display {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  .name{
+    margin: 0;
+  }
+  .job-title {
+    margin: 0;
+  }
+}
+
+// tablet and larger layout
+@media screen and (min-device-width: 750px) {
+  .display {
+    display: flex;
+    flex-direction: row;
+    .name {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      margin-right: 0.25rem;
+    }
+    .job-title {
+      margin-top: 0.5rem;
+    }
+  }
+}

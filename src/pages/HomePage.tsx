@@ -11,9 +11,9 @@ const HomePage = () => {
     <Container maxWidth='sm'>
       <div className="d-flex flex-column align-center text-center">
         <img src={profile} alt='profile picture' className='profile-image mb-3'/>
-        <div className='d-flex align-center'>
-          <h2 className='mt-0 mb-2 mr-1'>{t('homepage.name')}</h2>
-          {t('homepage.title')}
+        <div className='display'>
+          <h2 className='name'>{t('homepage.name')}</h2>
+          <span className='job-title'>{t('homepage.title')}</span>
         </div>
         <span className='quote'>
           {t('homepage.quote')}
