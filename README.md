@@ -1,6 +1,6 @@
 # Jensen's Homepage
 
-[https://jensenyuen.github.io/portfolio/p](https://jensenyuen.github.io/portfolio/) WIP
+[https://jensenyuen.github.io/portfolio/](https://jensenyuen.github.io/portfolio/) WIP
 
 ## Stack
 TypeScript
