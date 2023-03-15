@@ -39,11 +39,7 @@ const NavBar = () => {
   ]
 
   const renderHome = () => (
-    <Link
-      className='pr-2 home'
-      to='/'>
-        {links[0].text}
-      </Link>
+    <Link className='pr-2 home' to='/'>{links[0].text}</Link>
   )
 
   const renderLinks = () => {
@@ -55,11 +51,7 @@ const NavBar = () => {
       return (
         <li key={link.link}>
           {index !== 3
-            ? (<Link
-                className='pr-2'
-                to={`/${link.link}`}>
-                  {link.text}
-            </Link>)
+            ? (<Link className='pr-2' to={`${link.link}`} state={{ workSelected: false }}>{link.text}</Link>)
             : (
                 <div className='d-flex'>
                   <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
@@ -108,7 +100,7 @@ const NavBar = () => {
             return (
               <ListItem key={link.text} disablePadding>
                 <ListItemButton>
-                  <Link to={`/${link.link}`}>{link.text}</Link>
+                  <Link to={`/${link.link}`} state={{ workSelected: false }}>{link.text}</Link>
                 </ListItemButton>
               </ListItem>
             )
