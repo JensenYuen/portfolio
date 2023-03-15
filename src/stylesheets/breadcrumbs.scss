@@ -1,0 +1,10 @@
+.breadcrumb-links {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.breadcrumb-links:hover {
+  text-underline-offset: 3px;
+  text-decoration: underline;
+}
