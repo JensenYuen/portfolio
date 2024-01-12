@@ -1,11 +1,15 @@
 {
   "homepage": {
     "name": "Jensen Yuen",
-    "title": "(Software Engineer)",
+    "title": "(ICT Engineer, Web Development Team)",
     "quote": "Hello, I aspire to be a fullstack web developer!",
     "bio": "Born in Singapore",
     "ntu": "Graduated from Nanyang Technological University, Bachelor of Engineering Specialization: Electronic Engineering (Microelectronics & Photonics)",
-    "lewagon": "Completed Web Development Course from LeWagon"
+    "lewagon": "Completed Web Development Course from LeWagon",
+    "ehle": "Graduated from Ehle Japanese Laguage school",
+    "ehle2": "Left Ehle Vocational School mid-course due to job offer",
+    "job1": "Ufinity Pte. Ltd. (7months)",
+    "current_job": "PERSOL EXCEL HR PARTNERS CO. LTD."
   },
   "work": {
     "subtext": "Personal/official works that I had contributed in developing.",
