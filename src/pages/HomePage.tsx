@@ -33,6 +33,18 @@ const HomePage = () => {
           <span className='mr-2'>2021</span>
           {t('homepage.lewagon')}
         </div>
+        <div>
+          <span className='mr-2'>2023</span>
+          {t('homepage.ehle')}
+        </div>
+        <div>
+          <span className='mr-2'>2023</span>
+          {t('homepage.ehle2')}
+        </div>
+        <div>
+          <span className='mr-2'>2023</span>
+          {t('homepage.current_job')}
+        </div>
       </div>
     </Container>
   )

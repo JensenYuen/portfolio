@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { gathersg, offgrid, scubadoo, prevPort, popuGraph } from '../assets/index'
+import { caseconnect, offgrid, scubadoo, prevPort, popuGraph } from '../assets/index'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { GridCard } from '../components'
 import '../stylesheets/workspage.scss'
@@ -41,23 +41,23 @@ const WorksPage = () => {
       imgSrc: prevPort
     },
     {
-      title: t('work.gathersg.title'),
-      altText: 'Image of GatherSG site',
-      subText: t('work.gathersg.subtext'),
-      link: 'gathersg',
-      imgSrc: gathersg
+      title: t('work.caseconnect.title'),
+      altText: 'Image of caseconnect site',
+      subText: t('work.caseconnect.subtext'),
+      link: 'caseconnect',
+      imgSrc: caseconnect
     },
     {
       title: t('work.offgrid.title'),
-      altText: 'Image of offgrid site',
       subText: t('work.offgrid.subtext'),
+      altText: 'Image of offgrid site',
       link: 'offgrid',
       imgSrc: offgrid
     },
     {
       title: t('work.scubadoo.title'),
-      altText: 'Image of scubadoo site',
       subText: t('work.scubadoo.subtext'),
+      altText: 'Image of scubadoo site',
       link: 'scubadoo',
       imgSrc: scubadoo
     }

@@ -29,7 +29,7 @@ const App = () => {
               element: <DetailedWorkPage />
             },
             {
-              path: 'gathersg',
+              path: 'caseconnect',
               element: <DetailedWorkPage />
             },
             {
