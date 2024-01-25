@@ -1,21 +1,21 @@
 {
   "homepage": {
     "name": "ユエン・ホー・チン",
-    "title": "(ICTエンジニア、ウェブ開発チーム)",
+    "title": "(ウェブ開発チーム)",
     "quote": "フルスタックを目指したいです!",
     "bio": "シンガポールに生まれた",
     "ntu": "南洋理工大学（シンガポール）電子電気工学部　卒業",
     "lewagon": "LeWagon ウェブ開発コース　卒業",
-    "ehle": "10月～2023年3月　エール学園　日本語教育学科　卒業",
-    "ehle2": "4月～6月　エール専門学校　国際ビジネス学科　退学",
-    "job1": "3月～2022年9月　Ufinity Pte. Ltd.　退職",
-    "current_job": "パーソルエクセルHRパートナーズ株式会社　7月入社～現在"
+    "ehle": "エール学園　日本語教育学科　卒業",
+    "ehle2": "エール専門学校　国際ビジネス学科　退学",
+    "current_job": "パーソルエクセルHRパートナーズ株式会社　現在"
   },
   "work": {
     "subtext": "以下は私に携わった個人・公式のものです。",
     "subtext2": "作品は最新なものから古いものまで並んでいます。",
     "popugraph": {
       "title": "人口グラフ",
+      "created_in":"2023",
       "subtext": "React SPA",
       "description": "Resas無料APIを使用して、日本府県人口データはhighchartsJSで現します。",
       "source": "https://github.com/JensenYuen/population-graph",
@@ -23,20 +23,23 @@
     },
     "prevport": {
       "title": "ポートフォリオ(旧)",
+      "created_in":"2023",
       "subtext": "React SPA",
       "description": "ReactとBootStrapを使用して、ポートフォリオをつくりました",
       "source": "https://github.com/JensenYuen/my-page",
       "link": "https://jensenyuen.github.io/my-page/"
     },
-    "gathersg": {
-      "title": "GatherSG",
+    "caseconnect": {
+      "title": "Case Connect",
+      "created_in":"2022",
       "subtext": "官公庁サイト",
-      "description": "保守、新しい機能の開発を担当しました。DevOpsとしてアプリ関係者やユーザーと関わり、問題解決しました。REST APIを開発して、3つのシステムを統合しました。",
+      "description": "CaseConnectは、低所得家族に支援を提供するケース調整システムです。",
       "source": "",
-      "link": "https://gather.gov.sg/"
+      "link": "https://gather.gov.sg/solutions/case-connect/"
     },
     "offgrid": {
       "title": "OffGrid",
+      "created_in":"2021",
       "subtext": "プロダクト開発",
       "description": "Offgridは、登山の初心者向けに作成しました。天気予報、必要なもの、ルート、などの基本情報を綺麗に準備して、緊急連絡先も含めて、緊急な時に情報は家族や救急隊に送ります。",
       "source": "https://github.com/eztree/offgrid",
@@ -44,6 +47,7 @@
     },
     "scubadoo": {
       "title": "Scubadoo",
+      "created_in":"2021",
       "subtext": "プロダクト開発",
       "description": "Scubadooは、ダイバー向けに作成しました。世界中のダイバーセンターやダイブ場所を簡単に探せるのサイトです。3日間に作成した(Padiの)ECクローンです。",
       "source": "https://github.com/suansen/scubadoo",

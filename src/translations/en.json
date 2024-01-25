@@ -1,14 +1,13 @@
 {
   "homepage": {
     "name": "Jensen Yuen",
-    "title": "(ICT Engineer, Web Development Team)",
+    "title": "(Web Development Team)",
     "quote": "Hello, I aspire to be a fullstack web developer!",
     "bio": "Born in Singapore",
     "ntu": "Graduated from Nanyang Technological University, Bachelor of Engineering Specialization: Electronic Engineering (Microelectronics & Photonics)",
     "lewagon": "Completed Web Development Course from LeWagon",
     "ehle": "Graduated from Ehle Japanese Laguage school",
-    "ehle2": "Left Ehle Vocational School mid-course due to job offer",
-    "job1": "Ufinity Pte. Ltd. (7months)",
+    "ehle2": "Left Ehle Vocational School due to job offer",
     "current_job": "PERSOL EXCEL HR PARTNERS CO. LTD."
   },
   "work": {
@@ -16,6 +15,7 @@
     "subtext2": "Works are arranged from newest to oldest work.",
     "popugraph": {
       "title": "Population graph",
+      "created_in":"2023",
       "subtext": "React SPA",
       "description": "Resas API was used to obtain population data, while highchartsJS was used to plot and display the data.",
       "source": "https://github.com/JensenYuen/population-graph",
@@ -23,20 +23,23 @@
     },
     "prevport": {
       "title": "Portfolio (previous)",
+      "created_in":"2023",
       "subtext": "React SPA",
       "description": "My attempt at creating my personal page using React and Bootstrap UI",
       "source": "https://github.com/JensenYuen/my-page",
       "link": "https://jensenyuen.github.io/my-page/"
     },
-    "gathersg": {
-      "title": "GatherSG",
+    "caseconnect": {
+      "title": "Case Connect",
+      "created_in":"2022",
       "subtext": "Government Service",
-      "description": "Maintained and developed features. Engaged with stakeholders and users to provide support for their issues. Developed REST API for system intergraions.",
+      "description": "Case coordination system providing comprehensive outreach and support to low-income families",
       "source": "",
       "link": "https://gather.gov.sg/"
     },
     "offgrid": {
       "title": "Offgrid",
+      "created_in":"2021",
       "subtext": "Product Development",
       "description": "Offgrid was developed to help novice hikers prepare for their hiking trip. We identified the lack of concise information for hikers and the lack of communication between hikers and their families/friends.",
       "source": "https://github.com/eztree/offgrid",
@@ -44,6 +47,7 @@
     },
     "scubadoo": {
       "title": "Scubadoo",
+      "created_in":"2021",
       "subtext": "Product Development",
       "description": "Scubadoo was developed to help divers locate dive centers and dive listings around the world. This is a marketplace clone (of Padi) developed within 3 days.",
       "source": "https://github.com/suansen/scubadoo",
