@@ -1,3 +1,5 @@
+@import '_styles';
+
 .about-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -16,6 +18,18 @@
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 1rem;
+}
+
+.about-details {
+  list-style-type: none;
+  li {
+    .li-title {
+      background-color: #8383838c;
+      border-radius: 0.25rem;
+      padding: 1px 5px;
+      
+    }
+  }
 }
 
 // //tablet and larger layout

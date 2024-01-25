@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import '../stylesheets/navbar.scss'
-import '../stylesheets/global.scss'
+import '../stylesheets/_styles.scss'
 
 interface linkInfo {
   text: string
