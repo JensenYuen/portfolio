@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import '../stylesheets/navbar.scss'
-import '../stylesheets/_styles.scss'
 
 interface linkInfo {
   text: string
@@ -51,7 +50,7 @@ const NavBar = () => {
             : (
                 <div className='d-flex'>
                   <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
-                  <GitHubIcon fontSize='small' className='ml-1 font-black' />
+                  <GitHubIcon fontSize='small' className='ml-1 github-icon' />
                 </div>
               )
           }

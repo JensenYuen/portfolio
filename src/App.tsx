@@ -25,10 +25,6 @@ const App = () => {
               element: <DetailedWorkPage />
             },
             {
-              path: 'prevport',
-              element: <DetailedWorkPage />
-            },
-            {
               path: 'caseconnect',
               element: <DetailedWorkPage />
             },

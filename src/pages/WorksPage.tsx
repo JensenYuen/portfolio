@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Container } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { caseconnect, offgrid, scubadoo, prevPort, popuGraph } from '../assets/index'
+import { caseconnect, offgrid, scubadoo, popuGraph } from '../assets/index'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { GridCard } from '../components'
 import '../stylesheets/workspage.scss'
@@ -32,13 +32,6 @@ const WorksPage = () => {
       altText: 'Image of popu-graph site',
       link: 'popugraph',
       imgSrc: popuGraph
-    },
-    {
-      title: t('work.prevport.title'),
-      subText: t('work.prevport.subtext'),
-      altText: 'Image of prevPort site',
-      link: 'prevport',
-      imgSrc: prevPort
     },
     {
       title: t('work.caseconnect.title'),

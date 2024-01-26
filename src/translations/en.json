@@ -19,15 +19,8 @@
       "subtext": "React SPA",
       "description": "Resas API was used to obtain population data, while highchartsJS was used to plot and display the data.",
       "source": "https://github.com/JensenYuen/population-graph",
-      "link": "https://jensenyuen.github.io/popu-graph/"
-    },
-    "prevport": {
-      "title": "Portfolio (previous)",
-      "created_in":"2023",
-      "subtext": "React SPA",
-      "description": "My attempt at creating my personal page using React and Bootstrap UI",
-      "source": "https://github.com/JensenYuen/my-page",
-      "link": "https://jensenyuen.github.io/my-page/"
+      "link": "https://jensenyuen.github.io/popu-graph/",
+      "stack": "React.JS"
     },
     "caseconnect": {
       "title": "Case Connect",
@@ -35,7 +28,8 @@
       "subtext": "Government Service",
       "description": "Case coordination system providing comprehensive outreach and support to low-income families",
       "source": "",
-      "link": "https://gather.gov.sg/"
+      "link": "https://gather.gov.sg/",
+      "stack": "React.JS, Node.JS"
     },
     "offgrid": {
       "title": "Offgrid",
@@ -43,7 +37,8 @@
       "subtext": "Product Development",
       "description": "Offgrid was developed to help novice hikers prepare for their hiking trip. We identified the lack of concise information for hikers and the lack of communication between hikers and their families/friends.",
       "source": "https://github.com/eztree/offgrid",
-      "link": ""
+      "link": "",
+      "stack": "Ruby, Ruby-on-rails, SCSS, JavaScript"
     },
     "scubadoo": {
       "title": "Scubadoo",
@@ -51,7 +46,9 @@
       "subtext": "Product Development",
       "description": "Scubadoo was developed to help divers locate dive centers and dive listings around the world. This is a marketplace clone (of Padi) developed within 3 days.",
       "source": "https://github.com/suansen/scubadoo",
-      "link": ""
+      "link": "",
+      "stack": "Ruby, Ruby-on-rails, SCSS, JavaScript"
+
     }
   },
   "about": {
