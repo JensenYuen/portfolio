@@ -11,8 +11,8 @@
     "current_job": "PERSOL EXCEL HR PARTNERS CO. LTD."
   },
   "work": {
-    "subtext": "Personal/official works that I had contributed in developing.",
-    "subtext2": "Works are arranged from newest to oldest work.",
+    "subtext": "Personal/Official projects that I have contributed to developing.",
+    "subtext2": "Works are arranged from newest to oldest.",
     "popugraph": {
       "title": "Population graph",
       "created_in":"2023",
@@ -29,7 +29,7 @@
       "description": "Case coordination system providing comprehensive outreach and support to low-income families",
       "source": "",
       "link": "https://gather.gov.sg/",
-      "stack": "React.JS, Node.JS"
+      "stack": "React.JS, Node.JS, TypeScript"
     },
     "offgrid": {
       "title": "Offgrid",

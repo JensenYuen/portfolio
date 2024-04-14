@@ -29,7 +29,7 @@
       "description": "CaseConnectは、低所得家族に支援を提供するケース調整システムです。",
       "source": "",
       "link": "https://gather.gov.sg/solutions/case-connect/",
-      "stack": "React.JS, Node.JS"
+      "stack": "React.JS, Node.JS, TypeScript"
     },
     "offgrid": {
       "title": "OffGrid",
