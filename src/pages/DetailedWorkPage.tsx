@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
-import { Breadcrumbs } from '../components'
+import { Breadcrumbs, ImageSet } from '../components'
 import { Typography } from '@mui/material'
 import '../stylesheets/aboutpage.scss'
 
@@ -104,6 +104,9 @@ const DetailedWorkPage = () => {
         {workDetails?.description}
       </Typography>
       {renderWorkList()}
+      <div className='d-flex jc-c'>
+        <ImageSet work={workDetails?.title}/>
+      </div>
     </>
   )
 }
