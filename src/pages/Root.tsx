@@ -1,7 +1,7 @@
 import React from 'react'
-import { Footer, Navbar } from '../layout/index'
-import '../stylesheets/homepage.scss'
+import { Footer, Navbar } from '../components/index'
 import { Outlet } from 'react-router-dom'
+import '../stylesheets/homepage.scss'
 
 const Root = () => {
   return (

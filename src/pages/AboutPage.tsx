@@ -1,8 +1,8 @@
 import React from 'react'
 import { Container } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { materialUi, reactLogo } from '../assets/index'
 import { GridCard } from '../components'
+import { MATERIALUI_IMG, REACT_IMG } from '../constants'
 import '../stylesheets/aboutpage.scss'
 
 interface techInfo {
@@ -19,13 +19,13 @@ const AboutPage = () => {
       title: t('about.react.title'),
       altText: t('about.react.altText'),
       description: t('about.react.description'),
-      imgSrc: reactLogo
+      imgSrc: REACT_IMG
     },
     {
       title: t('about.materialui.title'),
       altText: t('about.materialui.altText'),
       description: t('about.materialui.description'),
-      imgSrc: materialUi
+      imgSrc: MATERIALUI_IMG
     }
   ]
 
