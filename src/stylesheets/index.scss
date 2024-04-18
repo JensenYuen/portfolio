@@ -1,3 +1,5 @@
+@import '_styles';
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,7 +16,7 @@ code {
 
 #root {
   height: 100vh;
-  background-color: #ffffff;
-  color: #7e27b3;
+  background-color: $bg;
+  color: $text;
   overflow: auto;
 }

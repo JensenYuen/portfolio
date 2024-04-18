@@ -1,3 +1,5 @@
+@import '_styles';
+
 .bio {
   font-size: 1.25rem;
   font-weight: 600;
@@ -9,12 +11,42 @@
   height: 250px;
   width: 250px;
   border-radius: 50%;
-  border: 2px solid #9a9999;
+  border: 2px solid $primary;
 }
 
 .quote {
-  padding: 0.75rem;
-  border: 2px solid #9a9999;
-  background-color: rgba(232, 232, 232, 0.8);
+  padding: 0.25rem 0.5rem;
+  border: 1px solid $primary;
+  background-color: $secondary40;
   border-radius: 0.5rem;
+  color: $text;
+}
+
+// mobile layout
+.display {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  .name{
+    margin: 0;
+  }
+  .job-title {
+    margin: 0;
+  }
+}
+
+// tablet and larger layout
+@media screen and (min-device-width: 750px) {
+  .display {
+    display: flex;
+    flex-direction: row;
+    .name {
+      margin: 0;
+      margin-bottom: 0.5rem;
+      margin-right: 0.25rem;
+    }
+    .job-title {
+      margin-top: 0.5rem;
+    }
+  }
 }

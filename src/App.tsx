@@ -25,11 +25,7 @@ const App = () => {
               element: <DetailedWorkPage />
             },
             {
-              path: 'prevport',
-              element: <DetailedWorkPage />
-            },
-            {
-              path: 'gathersg',
+              path: 'caseconnect',
               element: <DetailedWorkPage />
             },
             {

@@ -1,3 +1,5 @@
+@import '_styles';
+
 .about-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -11,6 +13,18 @@
   border-radius: 1rem;
 }
 
+.about-details {
+  list-style-type: none;
+  li {
+    .li-title {
+      background-color: $secondary20;
+      border-radius: 0.25rem;
+      padding: 1px 5px;
+      color: $text;
+    }
+  }
+}
+
 // mobile layout
 .about-grid {
   display: grid;
@@ -18,7 +32,7 @@
   gap: 1rem;
 }
 
-// //tablet and larger layout
+//tablet and larger layout
 @media screen and (min-device-width: 750px) {
   .about-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

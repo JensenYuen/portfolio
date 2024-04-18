@@ -1,6 +1,6 @@
 import { Container } from '@mui/material'
 import React from 'react'
-import '../stylesheets/footer.scss'
+import '../../stylesheets/footer.scss'
 
 const Footer = () => {
   const year = new Date().getFullYear()

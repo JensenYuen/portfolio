@@ -1,14 +1,19 @@
 import React, { useMemo, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
-import { Breadcrumbs } from '../components'
+import { Breadcrumbs, ImageSet } from '../components'
+import { Typography } from '@mui/material'
 import '../stylesheets/aboutpage.scss'
+import { WORKSDATA } from '../constants'
 
 interface DetailedWorkInfo {
   title: string
+  created_in: string
   subText: string
   description: string
   source: string
+  link: string
+  stack: string
 }
 
 const DetailedWorkPage = () => {
@@ -18,46 +23,62 @@ const DetailedWorkPage = () => {
   const path = location.pathname.split('/').filter(path => path)
 
   useMemo(() => {
-    const works: Record<string, DetailedWorkInfo> = {
-      popugraph: {
-        title: t('work.popugraph.title'),
-        subText: t('work.popugraph.subtext'),
-        description: t('work.popugraph.description'),
-        source: t('work.popugraph.source')
-      },
-      prevport: {
-        title: t('work.prevport.title'),
-        subText: t('work.prevport.subtext'),
-        description: t('work.prevport.description'),
-        source: t('work.prevport.source')
-      },
-      gathersg: {
-        title: t('work.gathersg.title'),
-        subText: t('work.gathersg.subtext'),
-        description: t('work.gathersg.description'),
-        source: t('work.gathersg.source')
-      },
-      offgrid: {
-        title: t('work.offgrid.title'),
-        subText: t('work.offgrid.subtext'),
-        description: t('work.offgrid.description'),
-        source: t('work.offgrid.source')
-      },
-      scubadoo: {
-        title: t('work.scubadoo.title'),
-        subText: t('work.scubadoo.subtext'),
-        description: t('work.scubadoo.description'),
-        source: t('work.scubadoo.source')
-      }
-    }
-    setWorkDetails(works[path[1]])
+    const workDetails = WORKSDATA.find((work) => work.link === path[1])
+    setWorkDetails({
+      title: t(workDetails?.title ?? ''),
+      created_in: t(workDetails?.created_in ?? ''),
+      subText: t(workDetails?.subText ?? ''),
+      description: t(workDetails?.description ?? ''),
+      source: t(workDetails?.source ?? ''),
+      link: t(workDetails?.url ?? ''),
+      stack: t(workDetails?.stack ?? '')
+    })
   }, [path[1]])
+
+  const renderWorkList = () => (
+    <ul className='about-details'>
+       {
+        (workDetails?.link !== '') &&
+        <>
+          <li className='pb-1'>
+            <span className='li-title mr-2'>Website</span>
+            <a href={workDetails?.link} target='_blank' rel='noreferrer'>
+              {workDetails?.link}
+            </a>
+          </li>
+        </>
+      }
+      {
+        (workDetails?.source !== '') &&
+        <>
+          <li className='pb-1'>
+            <span className='li-title mr-2'>Source</span>
+            <a href={workDetails?.source} target='_blank' rel='noreferrer'>
+              {workDetails?.source}
+            </a>
+          </li>
+        </>
+      }
+      <li className='pb-1'>
+        <span className='li-title mr-2'>Stack</span>{workDetails?.stack}
+      </li>
+      <li className='pb-1'>
+        <span className='li-title mr-2'>Developed in</span>{workDetails?.created_in}
+      </li>
+    </ul>
+  )
 
   return (
     <>
       <Breadcrumbs prevPath={path[0]} currPath={path[1]}/>
       <h2>{workDetails?.title}</h2>
-      <p>content about each product to be added</p>
+      <Typography variant='subtitle1'>
+        {workDetails?.description}
+      </Typography>
+      {renderWorkList()}
+      <div className='d-flex jc-c'>
+        <ImageSet work={path[1]}/>
+      </div>
     </>
   )
 }

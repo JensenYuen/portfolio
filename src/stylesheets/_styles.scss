@@ -1,0 +1,204 @@
+$spacing: (
+  "0": 0,
+  "1": 0.25rem,
+  "2": 0.5rem,
+  "3": 0.75rem,
+  "4": 1rem,
+  "5": 1.25rem
+);
+
+$opacity: (
+  "5": 5%,
+  "10": 10%,
+  "15": 51%,
+  "20": 20%,
+  "25": 25%,
+  "30": 30%,
+  "35": 35%,
+  "40": 40%,
+  "45": 45%,
+  "50": 50%,
+  "55": 55%,
+  "60": 60%,
+  "65": 65%,
+  "70": 70%,
+  "75": 75%,
+  "80": 80%,
+  "85": 85%,
+  "90": 90%,
+  "95": 95%
+);
+
+$text: #7e27b4;
+$bg: #faf8fc;
+$primary: #a132e2;
+$secondary: #c785ef;
+$accent: #e9855d;
+$textcontrast: #64d97b;
+$bgcontrast: #64d97b;
+$primarycontrast: #ffdd00;
+$secondarycontrast: #ff8f8f;
+$accentcontrast: #ff8f8f;
+$text5: hsl(277, 64%, 43%, 5%);
+$text10: hsl(277, 64%, 43%, 10%);
+$text15: hsl(277, 64%, 43%, 15%);
+$text20: hsl(277, 64%, 43%, 20%);
+$text25: hsl(277, 64%, 43%, 25%);
+$text30: hsl(277, 64%, 43%, 30%);
+$text35: hsl(277, 64%, 43%, 35%);
+$text40: hsl(277, 64%, 43%, 40%);
+$text45: hsl(277, 64%, 43%, 45%);
+$text50: hsl(277, 64%, 43%, 50%);
+$text55: hsl(277, 64%, 43%, 55%);
+$text60: hsl(277, 64%, 43%, 60%);
+$text65: hsl(277, 64%, 43%, 65%);
+$text70: hsl(277, 64%, 43%, 70%);
+$text75: hsl(277, 64%, 43%, 75%);
+$text80: hsl(277, 64%, 43%, 80%);
+$text85: hsl(277, 64%, 43%, 85%);
+$text90: hsl(277, 64%, 43%, 90%);
+$text95: hsl(277, 64%, 43%, 95%);
+$primary5: hsl(278, 75%, 54%, 5%);
+$primary10: hsl(278, 75%, 54%, 10%);
+$primary15: hsl(278, 75%, 54%, 15%);
+$primary20: hsl(278, 75%, 54%, 20%);
+$primary25: hsl(278, 75%, 54%, 25%);
+$primary30: hsl(278, 75%, 54%, 30%);
+$primary35: hsl(278, 75%, 54%, 35%);
+$primary40: hsl(278, 75%, 54%, 40%);
+$primary45: hsl(278, 75%, 54%, 45%);
+$primary50: hsl(278, 75%, 54%, 50%);
+$primary55: hsl(278, 75%, 54%, 55%);
+$primary60: hsl(278, 75%, 54%, 60%);
+$primary65: hsl(278, 75%, 54%, 65%);
+$primary70: hsl(278, 75%, 54%, 70%);
+$primary75: hsl(278, 75%, 54%, 75%);
+$primary80: hsl(278, 75%, 54%, 80%);
+$primary85: hsl(278, 75%, 54%, 85%);
+$primary90: hsl(278, 75%, 54%, 90%);
+$primary95: hsl(278, 75%, 54%, 95%);
+$secondary5: hsl(277, 77%, 73%, 5%);
+$secondary10: hsl(277, 77%, 73%, 10%);
+$secondary15: hsl(277, 77%, 73%, 15%);
+$secondary20: hsl(277, 77%, 73%, 20%);
+$secondary25: hsl(277, 77%, 73%, 25%);
+$secondary30: hsl(277, 77%, 73%, 30%);
+$secondary35: hsl(277, 77%, 73%, 35%);
+$secondary40: hsl(277, 77%, 73%, 40%);
+$secondary45: hsl(277, 77%, 73%, 45%);
+$secondary50: hsl(277, 77%, 73%, 50%);
+$secondary55: hsl(277, 77%, 73%, 55%);
+$secondary60: hsl(277, 77%, 73%, 60%);
+$secondary65: hsl(277, 77%, 73%, 65%);
+$secondary70: hsl(277, 77%, 73%, 70%);
+$secondary75: hsl(277, 77%, 73%, 75%);
+$secondary80: hsl(277, 77%, 73%, 80%);
+$secondary85: hsl(277, 77%, 73%, 85%);
+$secondary90: hsl(277, 77%, 73%, 90%);
+$secondary95: hsl(277, 77%, 73%, 95%);
+$accent5: hsl(17, 76%, 64%, 5%);
+$accent10: hsl(17, 76%, 64%, 10%);
+$accent15: hsl(17, 76%, 64%, 15%);
+$accent20: hsl(17, 76%, 64%, 20%);
+$accent25: hsl(17, 76%, 64%, 25%);
+$accent30: hsl(17, 76%, 64%, 30%);
+$accent35: hsl(17, 76%, 64%, 35%);
+$accent40: hsl(17, 76%, 64%, 40%);
+$accent45: hsl(17, 76%, 64%, 45%);
+$accent50: hsl(17, 76%, 64%, 50%);
+$accent55: hsl(17, 76%, 64%, 55%);
+$accent60: hsl(17, 76%, 64%, 60%);
+$accent65: hsl(17, 76%, 64%, 65%);
+$accent70: hsl(17, 76%, 64%, 70%);
+$accent75: hsl(17, 76%, 64%, 75%);
+$accent80: hsl(17, 76%, 64%, 80%);
+$accent85: hsl(17, 76%, 64%, 85%);
+$accent90: hsl(17, 76%, 64%, 90%);
+$accent95: hsl(17, 76%, 64%, 95%);
+
+@each $key, $val in $opacity {
+  .text#{$key} {
+    color: hsl(277, 64%, 43%, $val)
+  };
+  .secondary#{$key} {
+    color: hsl(277, 64%, 43%, $val)
+  };
+  .accent#{$key} {
+    color: hsl(277, 64%, 43%, $val)
+  };
+  .bg#{$key} {
+    color: hsl(277, 64%, 43%, $val)
+  };
+}
+
+a {
+  color: $text
+}
+
+a:visited {
+  color: $secondary
+}
+
+.d-flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.github-icon {
+  color:#2d2d2d
+}
+
+@each $key, $val in $spacing {
+  // margin
+  .mr-#{$key} {
+    margin-right: $val;
+  }
+  .ml-#{$key} {
+    margin-left: $val;
+  }
+  .mt-#{$key} {
+    margin-top: $val;
+  }
+  .mb-#{$key} {
+    margin-bottom: $val;
+  }
+  .m-#{$key} {
+    margin: $val;
+  }
+
+  // padding
+  .pr-#{$key} {
+    padding-right: $val;
+  }
+  .pl-#{$key} {
+    padding-left: $val;
+  }
+  .pt-#{$key} {
+    padding-top: $val;
+  }
+  .pb-#{$key} {
+    padding-bottom: $val;
+  }
+  .p-#{$key} {
+    padding: $val;
+  }
+}
