@@ -18,9 +18,9 @@
       "created_in":"2023",
       "subtext": "React SPA",
       "description": "Resas無料APIを使用して、日本府県人口データはhighchartsJSで表示させます。",
-      "source": "https://github.com/JensenYuen/population-graph",
+      "source": "https://github.com/JensenYuen/popu-graph",
       "link": "https://jensenyuen.github.io/popu-graph/",
-      "stack": "React.JS"
+      "stack": "React.JS, TypeScript"
     },
     "caseconnect": {
       "title": "Case Connect",
@@ -29,7 +29,7 @@
       "description": "CaseConnectは、低所得家族に支援を提供するケース調整システムです。",
       "source": "",
       "link": "https://gather.gov.sg/solutions/case-connect/",
-      "stack": "React.JS, Node.JS, TypeScript"
+      "stack": "React.JS, Node.JS, TypeScript, Tailwind"
     },
     "offgrid": {
       "title": "OffGrid",

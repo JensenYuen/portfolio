@@ -18,9 +18,9 @@
       "created_in":"2023",
       "subtext": "React SPA",
       "description": "Resas API was used to obtain population data, while highchartsJS was used to plot and display the data.",
-      "source": "https://github.com/JensenYuen/population-graph",
+      "source": "https://github.com/JensenYuen/popu-graph",
       "link": "https://jensenyuen.github.io/popu-graph/",
-      "stack": "React.JS"
+      "stack": "React.JS, TypeScript"
     },
     "caseconnect": {
       "title": "Case Connect",
@@ -29,7 +29,7 @@
       "description": "Case coordination system providing comprehensive outreach and support to low-income families",
       "source": "",
       "link": "https://gather.gov.sg/",
-      "stack": "React.JS, Node.JS, TypeScript"
+      "stack": "React.JS, Node.JS, TypeScript, Tailwind"
     },
     "offgrid": {
       "title": "Offgrid",
