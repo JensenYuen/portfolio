@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 import { Breadcrumbs, ImageSet } from '../components'
 import { Typography } from '@mui/material'
 import '../stylesheets/aboutpage.scss'
+import { WORKSDATA } from '../constants'
 
 interface DetailedWorkInfo {
   title: string
@@ -22,45 +23,16 @@ const DetailedWorkPage = () => {
   const path = location.pathname.split('/').filter(path => path)
 
   useMemo(() => {
-    const works: Record<string, DetailedWorkInfo> = {
-      popugraph: {
-        title: t('work.popugraph.title'),
-        created_in: t('work.popugraph.created_in'),
-        subText: t('work.popugraph.subtext'),
-        description: t('work.popugraph.description'),
-        source: t('work.popugraph.source'),
-        link: t('work.popugraph.link'),
-        stack: t('work.popugraph.stack')
-      },
-      caseconnect: {
-        title: t('work.caseconnect.title'),
-        created_in: t('work.caseconnect.created_in'),
-        subText: t('work.caseconnect.subtext'),
-        description: t('work.caseconnect.description'),
-        source: t('work.caseconnect.source'),
-        link: t('work.caseconnect.link'),
-        stack: t('work.caseconnect.stack')
-      },
-      offgrid: {
-        title: t('work.offgrid.title'),
-        created_in: t('work.offgrid.created_in'),
-        subText: t('work.offgrid.subtext'),
-        description: t('work.offgrid.description'),
-        source: t('work.offgrid.source'),
-        link: t('work.offgrid.link'),
-        stack: t('work.offgrid.stack')
-      },
-      scubadoo: {
-        title: t('work.scubadoo.title'),
-        created_in: t('work.scubadoo.created_in'),
-        subText: t('work.scubadoo.subtext'),
-        description: t('work.scubadoo.description'),
-        source: t('work.scubadoo.source'),
-        link: t('work.scubadoo.link'),
-        stack: t('work.scubadoo.stack')
-      }
-    }
-    setWorkDetails(works[path[1]])
+    const workDetails = WORKSDATA.find((work) => work.link === path[1])
+    setWorkDetails({
+      title: t(workDetails?.title ?? ''),
+      created_in: t(workDetails?.created_in ?? ''),
+      subText: t(workDetails?.subText ?? ''),
+      description: t(workDetails?.description ?? ''),
+      source: t(workDetails?.source ?? ''),
+      link: t(workDetails?.url ?? ''),
+      stack: t(workDetails?.stack ?? '')
+    })
   }, [path[1]])
 
   const renderWorkList = () => (
@@ -105,7 +77,7 @@ const DetailedWorkPage = () => {
       </Typography>
       {renderWorkList()}
       <div className='d-flex jc-c'>
-        <ImageSet work={workDetails?.title}/>
+        <ImageSet work={path[1]}/>
       </div>
     </>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import { Container } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { GridCard } from '../components'
-import { MATERIALUI_IMG, REACT_IMG } from '../constants'
+import { ABOUT } from '../constants'
 import '../stylesheets/aboutpage.scss'
 
 interface techInfo {
@@ -14,31 +14,17 @@ interface techInfo {
 
 const AboutPage = () => {
   const { t } = useTranslation()
-  const aboutTech: techInfo[] = [
-    {
-      title: t('about.react.title'),
-      altText: t('about.react.altText'),
-      description: t('about.react.description'),
-      imgSrc: REACT_IMG
-    },
-    {
-      title: t('about.materialui.title'),
-      altText: t('about.materialui.altText'),
-      description: t('about.materialui.description'),
-      imgSrc: MATERIALUI_IMG
-    }
-  ]
 
   const renderCards = () => {
-    const cards = aboutTech.map(tech => {
+    const cards = ABOUT.map((tech: techInfo) => {
       return (
         <GridCard
           key={tech.title}
           className='about-image'
-          title={tech.title}
-          altText={tech.altText}
-          imgSrc={tech.imgSrc}
-          description={tech.description}
+          title={t(tech.title)}
+          altText={t(tech.altText)}
+          imgSrc={t(tech.imgSrc)}
+          description={t(tech.description)}
         />
       )
     })

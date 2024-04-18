@@ -35,32 +35,76 @@ export const IMGDATA = {
 
 // Works Info
 export const WORKSDATA = [
-  {
+  { // popugraph
     title: 'work.popugraph.title',
     subText: 'work.popugraph.subtext',
     altText: 'Image of popu-graph site',
-    link: 'popugraph',
-    imgSrc: IMGURL.popugraph
+    created_in: 'work.popugraph.created_in',
+    description: 'work.popugraph.description',
+    source: 'work.popugraph.source',
+    stack: 'work.popugraph.stack',
+    url: 'work.popugraph.link',
+    imgSrc: IMGURL.popugraph,
+    link: 'popugraph'
   },
-  {
+  { // caseconnet
     title: 'work.caseconnect.title',
     altText: 'Image of caseconnect site',
     subText: 'work.caseconnect.subtext',
-    link: 'caseconnect',
-    imgSrc: IMGURL.caseconnet
+    created_in: 'work.caseconnect.created_in',
+    description: 'work.caseconnect.description',
+    source: 'work.caseconnect.source',
+    url: 'work.caseconnect.link',
+    stack: 'work.caseconnect.stack',
+    imgSrc: IMGURL.caseconnet,
+    link: 'caseconnect'
   },
-  {
+  { // offgrid
     title: 'work.offgrid.title',
     subText: 'work.offgrid.subtext',
     altText: 'Image of offgrid site',
-    link: 'offgrid',
-    imgSrc: IMGURL.offgrid
+    created_in: 'work.offgrid.created_in',
+    description: 'work.offgrid.description',
+    source: 'work.offgrid.source',
+    url: 'work.offgrid.link',
+    stack: 'work.offgrid.stack',
+    imgSrc: IMGURL.offgrid,
+    link: 'offgrid'
   },
-  {
+  { // scubadoo
     title: 'work.scubadoo.title',
     subText: 'work.scubadoo.subtext',
     altText: 'Image of scubadoo site',
-    link: 'scubadoo',
-    imgSrc: IMGURL.scubadoo
+    created_in: 'work.scubadoo.created_in',
+    description: 'work.scubadoo.description',
+    source: 'work.scubadoo.source',
+    url: 'work.scubadoo.link',
+    stack: 'work.scubadoo.stack',
+    imgSrc: IMGURL.scubadoo,
+    link: 'scubadoo'
+  }
+]
+
+// Navbar links
+export const NAVLINKS = [
+  { text: 'Jensen Yuen', link: '' },
+  { text: 'Works', link: 'works' },
+  { text: 'About', link: 'about' },
+  { text: 'Source', link: 'https://github.com/JensenYuen/portfolio' }
+]
+
+// About page
+export const ABOUT = [
+  {
+    title: 'about.react.title',
+    altText: 'about.react.altText',
+    description: 'about.react.description',
+    imgSrc: IMGURL.react
+  },
+  {
+    title: 'about.materialui.title',
+    altText: 'about.materialui.altText',
+    description: 'about.materialui.description',
+    imgSrc: IMGURL.materialui
   }
 ]

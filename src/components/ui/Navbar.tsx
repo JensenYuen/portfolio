@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import '../../stylesheets/navbar.scss'
+import { NAVLINKS } from '../../constants'
 
 interface linkInfo {
   text: string
@@ -30,15 +31,8 @@ const NavBar = () => {
     handleResize()
   }, [winSize])
 
-  const links: linkInfo[] = [
-    { text: 'Jensen Yuen', link: '' },
-    { text: 'Works', link: 'works' },
-    { text: 'About', link: 'about' },
-    { text: 'Source', link: 'https://github.com/JensenYuen/portfolio' }
-  ]
-
   const renderLinks = () => {
-    const link = links.map((link: linkInfo, index) => {
+    const link = NAVLINKS.map((link: linkInfo, index) => {
       if (index === 0) {
         return <></>
       }
@@ -81,7 +75,7 @@ const NavBar = () => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {links.map((link: linkInfo, index) => {
+        {NAVLINKS.map((link: linkInfo, index) => {
           if (index === 0) {
             return (
               <ListItem key={`${link.text}-mobile`} disablePadding>
@@ -118,7 +112,7 @@ const NavBar = () => {
     <nav>
       <Container maxWidth='md' className='pt-2 pb-5'>
         <div className={`d-flex ${isMobile ? 'jc-sb' : ''}`}>
-          <Link key='home-mobile' className='pr-2 home' to='/'>{links[0].text}</Link>
+          <Link key='home-mobile' className='pr-2 home' to='/'>{NAVLINKS[0].text}</Link>
           {!isMobile &&
             <div className="navbar">
               {renderLinks()}
