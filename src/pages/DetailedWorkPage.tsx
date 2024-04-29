@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumbs, ImageSet } from '../components'
 import { Typography } from '@mui/material'
-import '../stylesheets/aboutpage.scss'
 import { WORKSDATA } from '../constants'
+import '../stylesheets/aboutpage.scss'
 
 interface DetailedWorkInfo {
   title: string
