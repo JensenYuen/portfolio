@@ -19,7 +19,7 @@ const HomePage = () => {
           {t('homepage.quote')}
         </span>
       </div>
-      <div className='mb-5'>
+      <div className='mb-5 mt-3'>
         <div className='bio mb-1'>Bio</div>
         <div>
           <span className='mr-2'>1995</span>

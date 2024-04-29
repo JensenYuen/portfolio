@@ -28,7 +28,7 @@ const WorksPage = () => {
           <GridCard
             className='work-image'
             title={t(work.title)}
-            altText={t(work.altText)}
+            altText={work.altText}
             description={t(work.subText)}
             imgSrc={work.imgSrc}
           />

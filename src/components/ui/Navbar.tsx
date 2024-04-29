@@ -1,10 +1,11 @@
-import { Box, Button, Container, Drawer, List, ListItem, ListItemButton } from '@mui/material'
 import React, { useEffect, useState } from 'react'
+import { Box, Button, Container, Drawer, List, ListItem, ListItemButton } from '@mui/material'
+import { NAVLINKS } from '../../constants'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import LangMenu from '../langMenu'
 import '../../stylesheets/navbar.scss'
-import { NAVLINKS } from '../../constants'
 
 interface linkInfo {
   text: string
@@ -44,7 +45,7 @@ const NavBar = () => {
             : (
                 <div className='d-flex'>
                   <a href={link.link} target='_blank' rel='noreferrer'>{link.text}</a>
-                  <GitHubIcon fontSize='small' className='ml-1 github-icon' />
+                  <GitHubIcon fontSize='small' className='ml-1 icon' />
                 </div>
               )
           }
@@ -55,20 +56,18 @@ const NavBar = () => {
     return link
   }
 
-  const toggleDrawer =
-    (open: boolean) =>
-      (event: React.KeyboardEvent | React.MouseEvent) => {
-        if ((event.type === 'keydown') &&
-        ((event as React.KeyboardEvent).key === 'Tab' ||
-          (event as React.KeyboardEvent).key === 'Escape')
-        ) {
-          return
-        }
-
-        setisOpen(open)
+  const toggleDrawer = (open: boolean) =>
+    (event: React.KeyboardEvent | React.MouseEvent) => {
+      if ((event.type === 'keydown') &&
+      ((event as React.KeyboardEvent).key === 'Tab' ||
+        (event as React.KeyboardEvent).key === 'Escape')
+      ) {
+        return
       }
+      setisOpen(open)
+    }
 
-  const list = () => (
+  const renderList = () => (
     <Box
       role="presentation"
       onClick={toggleDrawer(false)}
@@ -111,26 +110,31 @@ const NavBar = () => {
   return (
     <nav>
       <Container maxWidth='md' className='pt-2 pb-5'>
-        <div className={`d-flex ${isMobile ? 'jc-sb' : ''}`}>
-          <Link key='home-mobile' className='pr-2 home' to='/'>{NAVLINKS[0].text}</Link>
-          {!isMobile &&
-            <div className="navbar">
-              {renderLinks()}
-            </div>
-          }
-          {isMobile &&
-            <div className="sidebar">
-              <Button onClick={toggleDrawer(true)}
-                startIcon={<MenuIcon />} style={{ color: '#7e27b3' }}/>
-              <Drawer
-                anchor={'right'}
-                open={isOpen}
-                onClose={toggleDrawer(false)}
-              >
-                {list()}
-              </Drawer>
-            </div>
-          }
+        <div className={`d-flex align-center ${isMobile ? 'jc-sb' : 'jc-sa'}`}>
+          <div className='d-flex'>
+            <Link key='home-mobile' className='pr-2 home' to='/'>{NAVLINKS[0].text}</Link>
+            {!isMobile &&
+              <div className="navbar">
+                {renderLinks()}
+              </div>
+            }
+          </div>
+          <div className='d-flex'>
+            {LangMenu()}
+            {isMobile &&
+              <div className="sidebar">
+                <Button onClick={toggleDrawer(true)}
+                  startIcon={<MenuIcon />} style={{ color: '#7e27b3' }} />
+                <Drawer
+                  anchor={'right'}
+                  open={isOpen}
+                  onClose={toggleDrawer(false)}
+                >
+                  {renderList()}
+                </Drawer>
+              </div>
+            }
+          </div>
         </div>
       </Container>
     </nav>
