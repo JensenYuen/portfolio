@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutPage, HomePage, WorksPage, DetailedWorkPage, Root } from './pages/index'
+import { AboutPage, HomePage, WorksPage, DetailedWorkPage, Root, ErrorPage } from './pages/index'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     {
       path: '/',
       element: <Root />,
+      errorElement: <ErrorPage />,
       children: [
         {
           path: '/',

@@ -62,5 +62,9 @@
       "altText": "MaterialUI image",
       "description": "A component library used for creating websites"
     }
+  },
+  "error": {
+    "altText": "PAGE NOT FOUND",
+    "subText": "The page you are looking for might have been removed had its name changed or is temporarily unavailable."
   }
 }

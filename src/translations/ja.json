@@ -62,5 +62,9 @@
       "altText": "MaterialUI image",
       "description": "Google の Material Designをベースに開発された、UIコンポーネントライブラリです"
     }
+  },
+  "error": {
+    "altText": "ページが見つかりません",
+    "subText": "申し訳ございません。お探しのページは変更されているか、削除されている可能性があります。"
   }
 }
