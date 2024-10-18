@@ -4,7 +4,7 @@ import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
 import { IMG_DATA } from '../constants'
 
-interface props {
+interface Props {
   work: string
 }
 interface WorkImgInfo {
@@ -13,7 +13,7 @@ interface WorkImgInfo {
   featured: boolean
 }
 
-const ImageSet = ({ work }: props) => {
+const ImageSet = ({ work }: Props) => {
   const [workImg, setWorkImg] = useState<WorkImgInfo[]>([])
 
   useMemo(() => {

@@ -30,7 +30,7 @@ const WorksPage = () => {
             title={t(work.title)}
             altText={work.altText}
             description={t(work.subText)}
-            imgSrc={work.imgSrc}
+            src={work.src}
           />
         </div>
       )
