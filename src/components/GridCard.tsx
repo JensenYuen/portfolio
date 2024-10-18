@@ -1,6 +1,6 @@
 import React from 'react'
 
-interface props {
+interface Props {
   className: string
   title: string
   altText: string
@@ -8,7 +8,7 @@ interface props {
   description: string
 }
 
-const GridCard = ({ className, title, imgSrc, altText, description }: props) => {
+const GridCard = ({ className, title, imgSrc, altText, description }: Props) => {
   return (
     <div>
       <img key={title} src={imgSrc} alt={altText} className={className} loading='lazy'/>

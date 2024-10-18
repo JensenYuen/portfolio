@@ -3,12 +3,12 @@ import { Breadcrumbs as Breadcrumb, Typography } from '@mui/material'
 import { Link } from 'react-router-dom'
 import '../stylesheets/breadcrumbs.scss'
 
-interface props {
+interface Props {
   prevPath: string
   currPath: string
 }
 
-const Breadcrumbs = ({ prevPath, currPath }: props) => {
+const Breadcrumbs = ({ prevPath, currPath }: Props) => {
   return (
       <div>
         <Breadcrumb aria-label="breadcrumb">
