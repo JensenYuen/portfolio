@@ -13,18 +13,6 @@
   border-radius: 1rem;
 }
 
-.about-details {
-  list-style-type: none;
-  li {
-    .li-title {
-      background-color: $secondary20;
-      border-radius: 0.25rem;
-      padding: 1px 5px;
-      color: $text;
-    }
-  }
-}
-
 // mobile layout
 .about-grid {
   display: grid;

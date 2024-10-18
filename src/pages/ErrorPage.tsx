@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, Container, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import '../stylesheets/errorpage.scss'
 import { useNavigate } from 'react-router-dom'
+import '../stylesheets/errorpage.scss'
 
 const ErrorPage = () => {
   const { t } = useTranslation()

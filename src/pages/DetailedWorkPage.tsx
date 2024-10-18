@@ -3,8 +3,8 @@ import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom'
 import { Breadcrumbs, ImageSet } from '../components'
 import { Typography } from '@mui/material'
-import { WORKSDATA } from '../constants'
-import '../stylesheets/aboutpage.scss'
+import { WORKS_DATA } from '../constants'
+import '../stylesheets/workspage.scss'
 
 interface DetailedWorkInfo {
   title: string
@@ -23,7 +23,7 @@ const DetailedWorkPage = () => {
   const path = location.pathname.split('/').filter(path => path)
 
   useMemo(() => {
-    const workDetails = WORKSDATA.find((work) => work.link === path[1])
+    const workDetails = WORKS_DATA.find((work) => work.link === path[1])
     setWorkDetails({
       title: t(workDetails?.title ?? ''),
       created_in: t(workDetails?.created_in ?? ''),
@@ -36,7 +36,7 @@ const DetailedWorkPage = () => {
   }, [path[1]])
 
   const renderWorkList = () => (
-    <ul className='about-details'>
+    <ul className='details-work'>
        {
         (workDetails?.link !== '') &&
         <>

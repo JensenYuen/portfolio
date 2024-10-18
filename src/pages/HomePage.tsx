@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { Container } from '@mui/material'
-import { IMGURL } from '../constants'
+import { IMG_URL } from '../constants'
 import '../stylesheets/homepage.scss'
 
 const HomePage = () => {
@@ -10,7 +10,7 @@ const HomePage = () => {
   return (
     <Container maxWidth='sm'>
       <div className="d-flex flex-column align-center text-center">
-        <img src={IMGURL.profile} alt='profile picture' className='profile-image mb-3'/>
+        <img src={IMG_URL.profile} alt='profile picture' className='profile-image mb-3'/>
         <div className='display'>
           <h2 className='name'>{t('homepage.name')}</h2>
           <span className='job-title'>{t('homepage.title')}</span>

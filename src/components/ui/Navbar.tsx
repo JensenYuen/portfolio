@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Button, Container, Drawer, List, ListItem, ListItemButton } from '@mui/material'
-import { NAVLINKS } from '../../constants'
+import { NAV_LINKS } from '../../constants'
 import { Link } from 'react-router-dom'
 import MenuIcon from '@mui/icons-material/Menu'
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -13,7 +13,7 @@ interface linkInfo {
 }
 
 const NavBar = () => {
-  const [isOpen, setisOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
   const [isMobile, setIsMobile] = useState(false)
   const [winSize, setWinSize] = useState(window.innerWidth)
 
@@ -33,13 +33,13 @@ const NavBar = () => {
   }, [winSize])
 
   const renderLinks = () => {
-    const link = NAVLINKS.map((link: linkInfo, index) => {
+    const link = NAV_LINKS.map((link: linkInfo, index: number) => {
       if (index === 0) {
         return <></>
       }
 
       return (
-        <li key={link.link}>
+        <>
           {index !== 3
             ? (<Link className='pr-2' to={`${link.link}`} state={{ workSelected: false }}>{link.text}</Link>)
             : (
@@ -49,7 +49,7 @@ const NavBar = () => {
                 </div>
               )
           }
-        </li>
+        </>
       )
     })
 
@@ -64,7 +64,7 @@ const NavBar = () => {
       ) {
         return
       }
-      setisOpen(open)
+      setIsOpen(open)
     }
 
   const renderList = () => (
@@ -74,7 +74,7 @@ const NavBar = () => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {NAVLINKS.map((link: linkInfo, index) => {
+        {NAV_LINKS.map((link: linkInfo, index) => {
           if (index === 0) {
             return (
               <ListItem key={`${link.text}-mobile`} disablePadding>
@@ -112,7 +112,7 @@ const NavBar = () => {
       <Container maxWidth='md' className='pt-2 pb-5'>
         <div className={`d-flex align-center ${isMobile ? 'jc-sb' : 'jc-sa'}`}>
           <div className='d-flex'>
-            <Link key='home-mobile' className='pr-2 home' to='/'>{NAVLINKS[0].text}</Link>
+            <Link key='home' className='pr-2 home' to='/'>{NAV_LINKS[0].text}</Link>
             {!isMobile &&
               <div className="navbar">
                 {renderLinks()}
