@@ -51,16 +51,22 @@
     }
   },
   "about": {
-    "subtext": "このページを作成しました技術スタック",
+    "subtext": "開発の際にデザインルールや使用した技術",
+    "responsive": {
+      "title": "レスポンシブWebデザイン",
+      "description": "デバイスの画面サイズに依存しないサイトを構築する手法"
+    },
+    "i18n": {
+      "title": "i18next",
+      "description": "多言語対応に向けて設計・開発"
+    },
     "react": {
       "title": "React",
-      "altText": "React image",
-      "description": "Reactで簡単にSPAを作成できるライブラリです"
+      "description": "簡単にSPAを構築するライブラリ"
     },
-    "materialui": {
-      "title": "MaterialUI",
-      "altText": "MaterialUI image",
-      "description": "Google の Material Designをベースに開発された、UIコンポーネントライブラリです"
+    "materialUI": {
+      "title": "materialUI",
+      "description": "興味が持っているUIコンポーネントライブラリ"
     }
   },
   "error": {
