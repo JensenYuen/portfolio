@@ -7,7 +7,7 @@ import i18n from 'i18next'
 
 const LangMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
-  const [language, setlanguage] = useState(navigator.language.split('-')[0])
+  const [language, setLanguage] = useState(navigator.language.split('-')[0])
   const open = Boolean(anchorEl)
 
   const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -18,13 +18,14 @@ const LangMenu = () => {
     setAnchorEl(null)
   }
 
-  const changeLang = async (e: any) => {
-    let lang = e.target.innerText
+  const changeLang = async (e: React.MouseEvent<HTMLLIElement, MouseEvent>) => {
+    let lang = e.currentTarget.innerText
     lang === '日本語' ? lang = 'ja' : lang = 'en'
 
-    setlanguage(lang)
+    setLanguage(lang)
     await i18n.changeLanguage(lang).finally(() => {
-      language === 'ja' ? setlanguage(lang) : setlanguage(lang)
+      language === 'ja' ? setLanguage(lang) : setLanguage(lang)
+      handleClose()
     })
   }
 
