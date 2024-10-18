@@ -5,8 +5,10 @@ export const IMG_URL = {
   scubadoo: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037153/portfolio_use/scubadoo_bzuafx.png',
   popugraph: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037148/portfolio_use/popuGraph_m9qcd1.png',
   caseconnect: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037130/portfolio_use/caseConnect_u6mqi4.png',
-  react: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037143/portfolio_use/reactLogo_lhz1mi.png',
-  materialui: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037134/portfolio_use/materialUi_hr4yyb.png'
+  react: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729276178/portfolio_use/reactLogo_lhz1mi.png',
+  materialui: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729276187/portfolio_use/materialUi_hr4yyb.png',
+  i18n: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729275175/i18n_x9h3n7.png',
+  responsive: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729276301/RWD_axxri7.png'
 }
 
 // Image Data
@@ -44,7 +46,7 @@ export const WORKS_DATA = [
     source: 'work.popugraph.source',
     stack: 'work.popugraph.stack',
     url: 'work.popugraph.link',
-    imgSrc: IMG_URL.popugraph,
+    src: IMG_URL.popugraph,
     link: 'popugraph'
   },
   { // caseconnect
@@ -56,7 +58,7 @@ export const WORKS_DATA = [
     source: 'work.caseconnect.source',
     url: 'work.caseconnect.link',
     stack: 'work.caseconnect.stack',
-    imgSrc: IMG_URL.caseconnect,
+    src: IMG_URL.caseconnect,
     link: 'caseconnect'
   },
   { // offgrid
@@ -68,7 +70,7 @@ export const WORKS_DATA = [
     source: 'work.offgrid.source',
     url: 'work.offgrid.link',
     stack: 'work.offgrid.stack',
-    imgSrc: IMG_URL.offgrid,
+    src: IMG_URL.offgrid,
     link: 'offgrid'
   },
   { // scubadoo
@@ -80,7 +82,7 @@ export const WORKS_DATA = [
     source: 'work.scubadoo.source',
     url: 'work.scubadoo.link',
     stack: 'work.scubadoo.stack',
-    imgSrc: IMG_URL.scubadoo,
+    src: IMG_URL.scubadoo,
     link: 'scubadoo'
   }
 ]
@@ -96,15 +98,27 @@ export const NAV_LINKS = [
 // About page
 export const ABOUT = [
   {
-    title: 'about.react.title',
-    altText: 'about.react.altText',
-    description: 'about.react.description',
-    imgSrc: IMG_URL.react
+    title: 'about.responsive.title',
+    description: 'about.responsive.description',
+    src: IMG_URL.responsive,
+    altText: 'responsive web design icon'
   },
   {
-    title: 'about.materialui.title',
-    altText: 'about.materialui.altText',
-    description: 'about.materialui.description',
-    imgSrc: IMG_URL.materialui
+    title: 'about.i18n.title',
+    description: 'about.i18n.description',
+    src: IMG_URL.i18n,
+    altText: 'responsive web design icon'
+  },
+  {
+    title: 'about.react.title',
+    description: 'about.react.description',
+    src: IMG_URL.react,
+    altText: 'responsive web design icon'
+  },
+  {
+    title: 'about.materialUI.title',
+    description: 'about.materialUI.description',
+    src: IMG_URL.materialui,
+    altText: 'responsive web design icon'
   }
 ]
