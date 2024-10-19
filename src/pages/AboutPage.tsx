@@ -15,13 +15,11 @@ interface AboutInfo {
 const AboutPage = () => {
   const { t } = useTranslation()
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const renderInfo = () => {
     const cards = ABOUT.map((about: AboutInfo) => {
       return (
         <AboutCard
           key={t(about.title)}
-          className='about-image'
           src={t(about.src)}
           altText={t(about.altText)}
           description={t(about.description)}
@@ -34,7 +32,7 @@ const AboutPage = () => {
   return (
     <Container maxWidth='sm'>
       <div className='mb-5'>
-        <div className='about-title mt-0 mb-1'>Tech</div>
+        <div className='about-title mt-0 mb-1'>About</div>
         <span>{t('about.subtext')}</span><br/>
       </div>
       <div className='about-grid'>
