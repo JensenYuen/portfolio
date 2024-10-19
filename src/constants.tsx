@@ -1,14 +1,14 @@
 // Image URL
 export const IMG_URL = {
-  profile: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037235/portfolio_use/profile_ls5wa1.png',
-  offgrid: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037158/portfolio_use/offgrid_tk01oz.png',
-  scubadoo: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037153/portfolio_use/scubadoo_bzuafx.png',
-  popugraph: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037148/portfolio_use/popuGraph_m9qcd1.png',
-  caseconnect: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1713037130/portfolio_use/caseConnect_u6mqi4.png',
-  react: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729276178/portfolio_use/reactLogo_lhz1mi.png',
-  materialui: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729276187/portfolio_use/materialUi_hr4yyb.png',
-  i18n: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729275175/i18n_x9h3n7.png',
-  responsive: 'https://res.cloudinary.com/dwxeen3eo/image/upload/v1729276301/RWD_axxri7.png'
+  profile: 'https://res.cloudinary.com/dwxeen3eo/image/upload/portfolio_use/profile_ls5wa1.png',
+  offgrid: 'https://res.cloudinary.com/dwxeen3eo/image/upload/portfolio_use/offgrid_tk01oz.png',
+  scubadoo: 'https://res.cloudinary.com/dwxeen3eo/image/upload/portfolio_use/scubadoo_bzuafx.png',
+  popugraph: 'https://res.cloudinary.com/dwxeen3eo/image/upload/portfolio_use/popuGraph_m9qcd1.png',
+  caseconnect: 'https://res.cloudinary.com/dwxeen3eo/image/upload/portfolio_use/caseConnect_u6mqi4.png',
+  react: 'https://res.cloudinary.com/dwxeen3eo/image/upload/portfolio_use/reactLogo_lhz1mi.png',
+  materialui: 'https://res.cloudinary.com/dwxeen3eo/image/upload/portfolio_use/materialUi_hr4yyb.png',
+  i18n: 'https://res.cloudinary.com/dwxeen3eo/image/upload/i18n_x9h3n7.png',
+  responsive: 'https://res.cloudinary.com/dwxeen3eo/image/upload/RWD_axxri7.png'
 }
 
 // Image Data
@@ -120,5 +120,49 @@ export const ABOUT = [
     description: 'about.materialUI.description',
     src: IMG_URL.materialui,
     altText: 'responsive web design icon'
+  }
+]
+
+// HomePage Bio
+export const TIMELINE_CONTENT = [
+  {
+    key: 'bio',
+    year: '1995',
+    content: 'homepage.bio'
+  },
+  {
+    key: 'ntu',
+    year: '2018 - 2021',
+    content: 'homepage.ntu'
+  },
+  {
+    key: 'lewagon',
+    year: '12/2021',
+    content: 'homepage.lewagon'
+  },
+  {
+    key: 'ufinity',
+    year: '03/2022 - 09/2022',
+    content: 'homepage.ufinity'
+  },
+  {
+    key: 'ehle',
+    year: '10/2022 - 04/2023',
+    content: 'homepage.ehle'
+  },
+  {
+    key: 'ehle2',
+    year: '04/2023 - 07/2023',
+    content: 'homepage.ehle2'
+  },
+  {
+    key: 'persol',
+    year: '07/2023 - 08/2024',
+    content: 'homepage.persol'
+  },
+  {
+    key: 'current',
+    year: '08/2024',
+    content: 'homepage.current'
   }
 ]

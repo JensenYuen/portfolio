@@ -7,7 +7,7 @@ import GitHubIcon from '@mui/icons-material/GitHub'
 import LangMenu from '../langMenu'
 import '../../stylesheets/navbar.scss'
 
-interface linkInfo {
+interface LinkInfo {
   text: string
   link: string
 }
@@ -33,7 +33,7 @@ const NavBar = () => {
   }, [winSize])
 
   const renderLinks = () => {
-    const link = NAV_LINKS.map((link: linkInfo, index: number) => {
+    const link = NAV_LINKS.map((link: LinkInfo, index: number) => {
       if (index === 0) {
         return <></>
       }
@@ -74,7 +74,7 @@ const NavBar = () => {
       onKeyDown={toggleDrawer(false)}
     >
       <List>
-        {NAV_LINKS.map((link: linkInfo, index) => {
+        {NAV_LINKS.map((link: LinkInfo, index) => {
           if (index === 0) {
             return (
               <ListItem key={`${link.text}-mobile`} disablePadding>

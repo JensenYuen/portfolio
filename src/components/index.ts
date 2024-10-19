@@ -6,4 +6,12 @@ import Footer from './ui/Footer'
 import LangMenu from './langMenu'
 import AboutCard from './AboutCard'
 
-export { GridCard, Breadcrumbs, ImageSet, Navbar, Footer, LangMenu, AboutCard }
+export {
+  GridCard,
+  Breadcrumbs,
+  ImageSet,
+  Navbar,
+  Footer,
+  LangMenu,
+  AboutCard
+}

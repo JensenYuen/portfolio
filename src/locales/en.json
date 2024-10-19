@@ -1,14 +1,16 @@
 {
   "homepage": {
     "name": "Jensen Yuen",
-    "title": "(Web Development Team)",
+    "title": "(Software Engineer)",
     "quote": "Hello, I aspire to be a fullstack web developer!",
     "bio": "Born in Singapore",
-    "ntu": "Graduated from Nanyang Technological University, Bachelor of Engineering Specialization: Electronic Engineering (Microelectronics & Photonics)",
+    "ntu": "Graduated from Nanyang Technological University, Bachelor of Engineering \nSpecialization: Electronic Engineering (Microelectronics & Photonics)",
     "lewagon": "Completed Web Development Course from LeWagon",
+    "ufinity": "Software Engineer(DevOps) @ Ufinity Ptd. Ltd. ",
     "ehle": "Graduated from Ehle Japanese Language school",
     "ehle2": "Left Ehle Vocational School due to job offer",
-    "current_job": "PERSOL EXCEL HR PARTNERS CO. LTD."
+    "persol": "Software Engineer(Web Development Team) @ PERSOL EXCEL HR PARTNERS CO. LTD.",
+    "current": "Software Engineer @ AppTime CO. LTD."
   },
   "work": {
     "subtext": "Personal/Official projects that I have contributed to developing.",
@@ -66,7 +68,7 @@
     },
     "materialUI": {
       "title": "materialUI",
-      "description": "A UI library that I was interested to try"
+      "description": "A UI library that I was interested in"
     }
   },
   "error": {
