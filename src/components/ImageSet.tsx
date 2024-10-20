@@ -2,9 +2,9 @@ import React, { useMemo, useState } from 'react'
 import ImageList from '@mui/material/ImageList'
 import ImageListItem from '@mui/material/ImageListItem'
 import ImageListItemBar from '@mui/material/ImageListItemBar'
-import { IMGDATA } from '../constants'
+import { IMG_DATA } from '../constants'
 
-interface props {
+interface Props {
   work: string
 }
 interface WorkImgInfo {
@@ -13,11 +13,11 @@ interface WorkImgInfo {
   featured: boolean
 }
 
-const ImageSet = ({ work }: props) => {
+const ImageSet = ({ work }: Props) => {
   const [workImg, setWorkImg] = useState<WorkImgInfo[]>([])
 
   useMemo(() => {
-    const workImg: WorkImgInfo[] = IMGDATA[work as keyof typeof IMGDATA].map((data) => {
+    const workImg: WorkImgInfo[] = IMG_DATA[work as keyof typeof IMG_DATA].map((data) => {
       return {
         img: data.img,
         title: data.title,

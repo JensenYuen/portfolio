@@ -1,14 +1,16 @@
 {
   "homepage": {
     "name": "Jensen Yuen",
-    "title": "(Web Development Team)",
+    "title": "(Software Engineer)",
     "quote": "Hello, I aspire to be a fullstack web developer!",
     "bio": "Born in Singapore",
-    "ntu": "Graduated from Nanyang Technological University, Bachelor of Engineering Specialization: Electronic Engineering (Microelectronics & Photonics)",
+    "ntu": "Graduated from Nanyang Technological University, Bachelor of Engineering \nSpecialization: Electronic Engineering (Microelectronics & Photonics)",
     "lewagon": "Completed Web Development Course from LeWagon",
-    "ehle": "Graduated from Ehle Japanese Laguage school",
+    "ufinity": "Software Engineer(DevOps) @ Ufinity Ptd. Ltd. ",
+    "ehle": "Graduated from Ehle Japanese Language school",
     "ehle2": "Left Ehle Vocational School due to job offer",
-    "current_job": "PERSOL EXCEL HR PARTNERS CO. LTD."
+    "persol": "Software Engineer(Web Development Team) @ PERSOL EXCEL HR PARTNERS CO. LTD.",
+    "current": "Software Engineer @ AppTime CO. LTD."
   },
   "work": {
     "subtext": "Personal/Official projects that I have contributed to developing.",
@@ -51,16 +53,26 @@
     }
   },
   "about": {
-    "subtext": "A list of tech that I used to create this page.",
+    "subtext": "A list of design decisions and tech that was incorporated into this portfolio",
+    "responsive": {
+      "title": "Responsive Web Design",
+      "description": "A practice of UX design, creating a consistent experience across devices"
+    },
+    "i18n": {
+      "title": "i18next",
+      "description": "A framework that is adopted for multi-language webpage"
+    },
     "react": {
       "title": "React",
-      "altText": "React image",
-      "description": "React used for creating Single-page Applications (SPA)"
+      "description": "Selected for ease of creating a Single-Page Application(SPA)"
     },
-    "materialui": {
-      "title": "MaterialUI",
-      "altText": "MaterialUI image",
-      "description": "A component library used for creating websites"
+    "materialUI": {
+      "title": "materialUI",
+      "description": "A UI library that I was interested in"
     }
+  },
+  "error": {
+    "altText": "PAGE NOT FOUND",
+    "subText": "The page you are looking for might have been removed had its name changed or is temporarily unavailable."
   }
 }

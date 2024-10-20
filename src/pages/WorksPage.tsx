@@ -3,7 +3,7 @@ import { Container } from '@mui/material'
 import { useTranslation } from 'react-i18next'
 import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import { GridCard } from '../components'
-import { WORKSDATA } from '../constants'
+import { WORKS_DATA } from '../constants'
 import '../stylesheets/workspage.scss'
 
 const WorksPage = () => {
@@ -22,7 +22,7 @@ const WorksPage = () => {
   }
 
   const renderCards = () => {
-    const cards = WORKSDATA.map((work) => {
+    const cards = WORKS_DATA.map((work) => {
       return (
         <div key={work.title} onClick={() => { handleClick(work.link) }}>
           <GridCard
@@ -30,7 +30,7 @@ const WorksPage = () => {
             title={t(work.title)}
             altText={work.altText}
             description={t(work.subText)}
-            imgSrc={work.imgSrc}
+            src={work.src}
           />
         </div>
       )

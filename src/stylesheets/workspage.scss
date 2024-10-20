@@ -30,7 +30,19 @@
   cursor: pointer;
 }
 
-// //tablet and larger layout
+.details-work {
+  list-style-type: none;
+  li {
+    .li-title {
+      background-color: $secondary20;
+      border-radius: 0.25rem;
+      padding: 1px 5px;
+      color: $text;
+    }
+  }
+}
+
+// tablet and larger layout
 @media screen and (min-device-width: 750px) {
   .work-image {
     height: 300px;
